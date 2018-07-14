@@ -1,0 +1,301 @@
+#calendar{
+    width: 130px;
+    height: 180px;
+    background-color: cornflowerblue;
+    color: #fff;
+    border-radius: 5%;
+    box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
+}
+#calendar>p {
+    font-family: Verdana, Arial, sans-serif;
+    padding: 10px 0;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+#calendar-day {
+    font-size:  16px;
+}
+
+#calendar-month-year {
+    font-size: 14px;
+}
+
+#calendar-date{
+    font-size: 64px;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+/*date2*/
+
+#calendar2 {
+    display: inline-block;
+    width: 100px;
+    height: 75px;
+    background: #355C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border-radius: 5%;
+    box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
+    text-align: center;
+}
+#calendar2>p {
+    font-family: Verdana, Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+#calendar-day2 {
+    font-size:  16px;
+    padding-top: 20px;
+}
+
+#calendar-month-year2 {
+    font-size: 14px;
+}
+
+#calendar-date2{
+    font-size: 64px;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+/*date3*/
+
+#calendar3 {
+    display: inline-block;
+    width: 100px;
+    height: 75px;
+    background: #355C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border-radius: 5%;
+    box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
+    text-align: center;
+}
+#calendar3>p {
+    font-family: Verdana, Arial, sans-serif;
+    padding: 10px 0;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+#calendar-day3 {
+    font-size:  16px;
+    padding-top: 20px;
+}
+
+#calendar-month-year3 {
+    font-size: 14px;
+}
+
+#calendar-date3{
+    font-size: 64px;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+/*date4*/
+
+#calendar4 {
+    display: inline-block;
+    width: 100px;
+    height: 75px;
+    background: #355C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border-radius: 5%;
+    box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
+    text-align: center;
+}
+#calendar4>p {
+    font-family: Verdana, Arial, sans-serif;
+    padding: 10px 0;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+#calendar-day4 {
+    font-size:  16px;
+    padding-top: 20px;
+}
+
+#calendar-month-year4 {
+    font-size: 14px;
+}
+
+#calendar-date4 {
+    font-size: 64px;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+/*date5*/
+
+#calendar5 {
+    display: inline-block;
+    width: 100px;
+    height: 75px;
+    background: #355C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border-radius: 5%;
+    box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
+    text-align: center;
+}
+#calendar5>p {
+    font-family: Verdana, Arial, sans-serif;
+    padding: 10px 0;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+#calendar-day5 {
+    font-size:  16px;
+    padding-top: 20px;
+}
+
+#calendar-month-year5 {
+    font-size: 14px;
+}
+
+#calendar-date5 {
+    font-size: 64px;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+/*date6*/
+
+#calendar6 {
+    display: inline-block;
+    width: 100px;
+    height: 75px;
+    background: #355C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border-radius: 5%;
+    box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
+    text-align: center;
+}
+#calendar6>p {
+    font-family: Verdana, Arial, sans-serif;
+    padding: 10px 0;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+#calendar-day6 {
+    font-size:  16px;
+    padding-top: 20px;
+}
+
+#calendar-month-year6 {
+    font-size: 14px;
+}
+
+#calendar-date6 {
+    font-size: 64px;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+/*date7*/
+
+#calendar7 {
+    display: inline-block;
+    width: 100px;
+    height: 75px;
+    background: #355C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border-radius: 5%;
+    box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
+    text-align: center;
+}
+#calendar7>p {
+    font-family: Verdana, Arial, sans-serif;
+    padding: 10px 0;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+#calendar-day7 {
+    font-size:  16px;
+    padding-top: 20px;
+}
+
+#calendar-month-year7 {
+    font-size: 14px;
+}
+
+#calendar-date7 {
+    font-size: 64px;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+/*date8*/
+
+#calendar8 {
+    display: inline-block;
+    width: 100px;
+    height: 75px;
+    background: #355C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border-radius: 5%;
+    box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
+    text-align: center;
+}
+#calendar8>p {
+    font-family: Verdana, Arial, sans-serif;
+    padding: 10px 0;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+#calendar-day8 {
+    font-size:  16px;
+    padding-top: 20px;
+}
+
+#calendar-month-year8 {
+    font-size: 14px;
+}
+
+#calendar-date8 {
+    font-size: 64px;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+/* card */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 30%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 2px 16px;
+}
