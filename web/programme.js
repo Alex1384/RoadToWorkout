@@ -28,3 +28,4 @@ function setText(id, val) {
 
 //call calendar() when page load
 window.onload = calendar;
+
