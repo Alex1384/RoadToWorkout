@@ -2,7 +2,10 @@
 /*================ BODY ============================ */
 body{
     margin: auto;
-    background: url(https://images.pexels.com/photos/3797/black-and-white-sport-fight-boxer.jpg?cs=srgb&dl=black-wallpaper-black-and-white-boxer-3797.jpg&fm=jpg) no-repeat;
+    /*background: url(https://images.pexels.com/photos/3797/black-and-white-sport-fight-boxer.jpg?cs=srgb&dl=black-wallpaper-black-and-white-boxer-3797.jpg&fm=jpg) no-repeat;
+    */
+    width: 100%;
+    background: url(https://images.pexels.com/photos/791763/pexels-photo-791763.jpeg?cs=srgb&dl=barbell-black-and-white-black-and-white-791763.jpg&fm=jpg) no-repeat;
     background-size: cover;
 }
 
@@ -11,10 +14,13 @@ body{
     margin-top: -7%;
     width: 130px;
     height: auto;
-    background-color: cornflowerblue;
+    background: #e52d27;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #b31217, #e52d27);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #b31217, #e52d27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
     border-radius: 5%;
     box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
+    border: 3px solid white;
     text-align: center;
 }
 #calendar>p {
@@ -43,9 +49,9 @@ body{
     display: inline-block;
     width: 100px;
     height: 75px;
-    background: #FC5C7D;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #ff00cc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
     border-radius: 5%;
     box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
@@ -56,6 +62,7 @@ body{
     -ms-transform: scale(1.2); /* IE 9 */
     -webkit-transform: scale(1.2); /* Safari 3-8 */
     transform: scale(1.2);
+    font-weight: bold;
 }
 
 #calendar2:target{
@@ -90,9 +97,9 @@ body{
     display: inline-block;
     width: 100px;
     height: 75px;
-    background: #FC5C7D;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #ff00cc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
     border-radius: 5%;
     box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
@@ -103,6 +110,7 @@ body{
     -ms-transform: scale(1.2); /* IE 9 */
     -webkit-transform: scale(1.2); /* Safari 3-8 */
     transform: scale(1.2);
+    font-weight: bold;
 }
 
 #calendar3>p {
@@ -135,9 +143,9 @@ body{
     display: inline-block;
     width: 100px;
     height: 75px;
-    background: #FC5C7D;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #ff00cc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
     border-radius: 5%;
     box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
@@ -148,6 +156,7 @@ body{
     -ms-transform: scale(1.2); /* IE 9 */
     -webkit-transform: scale(1.2); /* Safari 3-8 */
     transform: scale(1.2);
+    font-weight: bold;
 }
 
 #calendar4>p {
@@ -180,9 +189,9 @@ body{
     display: inline-block;
     width: 100px;
     height: 75px;
-    background: #FC5C7D;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #ff00cc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
     border-radius: 5%;
     box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
@@ -193,6 +202,7 @@ body{
     -ms-transform: scale(1.2); /* IE 9 */
     -webkit-transform: scale(1.2); /* Safari 3-8 */
     transform: scale(1.2);
+    font-weight: bold;
 }
 
 #calendar5>p {
@@ -225,9 +235,9 @@ body{
     display: inline-block;
     width: 100px;
     height: 75px;
-    background: #FC5C7D;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #ff00cc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
     border-radius: 5%;
     box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
@@ -238,6 +248,7 @@ body{
     -ms-transform: scale(1.2); /* IE 9 */
     -webkit-transform: scale(1.2); /* Safari 3-8 */
     transform: scale(1.2);
+    font-weight: bold;
 }
 
 #calendar6>p {
@@ -270,9 +281,9 @@ body{
     display: inline-block;
     width: 100px;
     height: 75px;
-    background: #FC5C7D;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #ff00cc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
     border-radius: 5%;
     box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
@@ -283,6 +294,7 @@ body{
     -ms-transform: scale(1.2); /* IE 9 */
     -webkit-transform: scale(1.2); /* Safari 3-8 */
     transform: scale(1.2);
+    font-weight: bold;
 }
 
 #calendar7>p {
@@ -315,9 +327,9 @@ body{
     display: inline-block;
     width: 100px;
     height: 75px;
-    background: #FC5C7D;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #ff00cc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
     border-radius: 5%;
     box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
@@ -328,6 +340,7 @@ body{
     -ms-transform: scale(1.2); /* IE 9 */
     -webkit-transform: scale(1.2); /* Safari 3-8 */
     transform: scale(1.2);
+    font-weight: bold;
 }
 
 #calendar8>p {
@@ -402,22 +415,19 @@ body{
     color: white;
 }
 .banner a{
-    background-color: dimgray;
+    background-color: #2f4357;
 
 }
 
 .banner a p:hover{
-    background-color: dimgray;
-    opacity: 1;
-    filter: alpha(opacity=100); /* For IE8 and earlier */
+    font-weight: bold;
+
 }
 
-
-
 .banner a p{
-    background-color: dimgray;
-    opacity: 0.7;
-    filter: alpha(opacity=70); /* For IE8 and earlier */
+    background-color: #2f4357;
+    opacity: 1;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
     width: 140px;
     padding: 0.75em 0;
     margin-left: auto;

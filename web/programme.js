@@ -15,7 +15,6 @@ function calendar() {
     setText('calendar-day7',day[6]);
     setText('calendar-day8',day[0]);
 
-
 }
 
 //this function will set the text value of <p> tags
