@@ -1,14 +1,16 @@
 #calendar{
+    margin-left: 100%;
+    margin-top: -7%;
     width: 130px;
-    height: 180px;
+    height: auto;
     background-color: cornflowerblue;
     color: #fff;
     border-radius: 5%;
     box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
+    text-align: center;
 }
 #calendar>p {
     font-family: Verdana, Arial, sans-serif;
-    padding: 10px 0;
     margin: 0;
     color: #fff;
     text-align: center;
@@ -19,18 +21,17 @@
 }
 
 #calendar-month-year {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 #calendar-date{
-    font-size: 64px;
-    padding-top: 10px;
-    padding-bottom: 0;
+    font-size: 16px;
 }
 
 /*date2*/
 
 #calendar2 {
+    margin-left: 10%;
     display: inline-block;
     width: 100px;
     height: 75px;
@@ -42,6 +43,13 @@
     box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
     text-align: center;
 }
+
+#calendar2:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+}
+
 #calendar2>p {
     font-family: Verdana, Arial, sans-serif;
     color: #fff;
@@ -66,6 +74,7 @@
 /*date3*/
 
 #calendar3 {
+    margin: 10px;
     display: inline-block;
     width: 100px;
     height: 75px;
@@ -77,6 +86,13 @@
     box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
     text-align: center;
 }
+
+#calendar3:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+}
+
 #calendar3>p {
     font-family: Verdana, Arial, sans-serif;
     padding: 10px 0;
@@ -103,6 +119,7 @@
 /*date4*/
 
 #calendar4 {
+    margin: 10px;
     display: inline-block;
     width: 100px;
     height: 75px;
@@ -114,6 +131,13 @@
     box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
     text-align: center;
 }
+
+#calendar4:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+}
+
 #calendar4>p {
     font-family: Verdana, Arial, sans-serif;
     padding: 10px 0;
@@ -140,6 +164,7 @@
 /*date5*/
 
 #calendar5 {
+    margin: 10px;
     display: inline-block;
     width: 100px;
     height: 75px;
@@ -151,6 +176,13 @@
     box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
     text-align: center;
 }
+
+#calendar5:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+}
+
 #calendar5>p {
     font-family: Verdana, Arial, sans-serif;
     padding: 10px 0;
@@ -177,6 +209,7 @@
 /*date6*/
 
 #calendar6 {
+    margin: 10px;
     display: inline-block;
     width: 100px;
     height: 75px;
@@ -188,6 +221,13 @@
     box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
     text-align: center;
 }
+
+#calendar6:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+}
+
 #calendar6>p {
     font-family: Verdana, Arial, sans-serif;
     padding: 10px 0;
@@ -214,6 +254,7 @@
 /*date7*/
 
 #calendar7 {
+    margin: 10px;
     display: inline-block;
     width: 100px;
     height: 75px;
@@ -225,6 +266,13 @@
     box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
     text-align: center;
 }
+
+#calendar7:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+}
+
 #calendar7>p {
     font-family: Verdana, Arial, sans-serif;
     padding: 10px 0;
@@ -251,6 +299,7 @@
 /*date8*/
 
 #calendar8 {
+    margin: 10px;
     display: inline-block;
     width: 100px;
     height: 75px;
@@ -262,6 +311,13 @@
     box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
     text-align: center;
 }
+
+#calendar8:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+}
+
 #calendar8>p {
     font-family: Verdana, Arial, sans-serif;
     padding: 10px 0;
@@ -285,22 +341,31 @@
     padding-bottom: 0;
 }
 
-/* card */
+/*------------------------ card ----------------------------------*/
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 30%;
+    width: 45%;
+    text-align: center;
+    margin: auto;
+    margin-top : 2.5%;
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 50px 50px 0 rgba(0,0,0,0.2);
 }
 
 .container {
     padding: 2px 16px;
 }
 
-/* slideshow */
+#img1{
+    margin : auto;
+}
+
+
+
+/*------------------------- slideshow  ------------------------ */
 .carousel{
     background: #2f4357;
     margin-top: 20px;
@@ -309,24 +374,12 @@
 }
 
 /*---------------- text objectif --------------*/
-.banner{
+.banner {
     color: white;
-    padding: 0;
-    margin: 0;
-    background-size: cover;
-    height: 100vh;
     text-align: center;
-}
-
-.banner a{
-    padding: 0;
-    margin: 0;
-    clear: both;
-}
-
-.banner p{
-    padding: 0;
-    margin: 0;
+    background-size: cover;
+    height: 10vh;
+    margin-left: -90%;
 }
 
 .banner_btn{
