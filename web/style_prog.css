@@ -305,12 +305,43 @@
     background: #2f4357;
     margin-top: 20px;
     color: white;
+    height: 200px;
 }
-.carousel .item{
-    min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
-}
-#carouselExampleIndicators{
 
+/*---------------- text objectif --------------*/
+.banner{
+    color: white;
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+}
+
+.banner a{
+    padding: 0;
+    margin: 0;
+    clear: both;
+}
+
+.banner p{
+    padding: 0;
+    margin: 0;
+}
+
+.banner_btn{
+    color: white;
+}
+.banner a{
+    background-color: red;
+}
+.banner a p{
+    background-color: red;
+    width: 140px;
+    padding: 0.75em 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
 }
 
 

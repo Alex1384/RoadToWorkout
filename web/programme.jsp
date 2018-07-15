@@ -18,10 +18,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-
 </head>
-<body>
 
+<body>
+    <div class="container">
+        <div class="banner">
+        <a class="banner_btn"><p>Mon objectif :</p></a>
+        </div>
+    </div>
 
     <div id="calendar">
         <p id="calendar-day"></p>
@@ -74,25 +78,33 @@
     <div class="card">
         <img src="https://png.icons8.com/nolan/1600/weightlift.png" alt="Avatar" style="width: 100%">
 
-        <div class="container">
+
             <div id="carouselExampleIndicators" class="carousel slide" data-interval="false" data-ride="carousel">
+
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
+
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <h3>Groupe musculaire 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="container">
+                            <h3>Groupe musculaire 1</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <h3>Groupe musculaire 2</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="container">
+                            <h3>Groupe musculaire 2</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <h3>Groupe musculaire 3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="container">
+                            <h3>Groupe musculaire 3</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -104,9 +116,6 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-
-        </div>
-
 
         <div style="overflow-x:auto;">
             <table class="table">
