@@ -1,3 +1,11 @@
+
+/*================ BODY ============================ */
+body{
+    margin: auto;
+    background: url(https://images.pexels.com/photos/3797/black-and-white-sport-fight-boxer.jpg?cs=srgb&dl=black-wallpaper-black-and-white-boxer-3797.jpg&fm=jpg) no-repeat;
+    background-size: cover;
+}
+
 #calendar{
     margin-left: 100%;
     margin-top: -7%;
@@ -31,13 +39,13 @@
 /*date2*/
 
 #calendar2 {
-    margin-left: 10%;
+    margin-left: 12.5%;
     display: inline-block;
     width: 100px;
     height: 75px;
-    background: #355C7D;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #FC5C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
     border-radius: 5%;
     box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
@@ -48,6 +56,10 @@
     -ms-transform: scale(1.2); /* IE 9 */
     -webkit-transform: scale(1.2); /* Safari 3-8 */
     transform: scale(1.2);
+}
+
+#calendar2:target{
+    border: 1px solid white;
 }
 
 #calendar2>p {
@@ -78,9 +90,9 @@
     display: inline-block;
     width: 100px;
     height: 75px;
-    background: #355C7D;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #FC5C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
     border-radius: 5%;
     box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
@@ -123,9 +135,9 @@
     display: inline-block;
     width: 100px;
     height: 75px;
-    background: #355C7D;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #FC5C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
     border-radius: 5%;
     box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
@@ -168,9 +180,9 @@
     display: inline-block;
     width: 100px;
     height: 75px;
-    background: #355C7D;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #FC5C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
     border-radius: 5%;
     box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
@@ -213,9 +225,9 @@
     display: inline-block;
     width: 100px;
     height: 75px;
-    background: #355C7D;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #FC5C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
     border-radius: 5%;
     box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
@@ -258,9 +270,9 @@
     display: inline-block;
     width: 100px;
     height: 75px;
-    background: #355C7D;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #FC5C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
     border-radius: 5%;
     box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
@@ -303,9 +315,9 @@
     display: inline-block;
     width: 100px;
     height: 75px;
-    background: #355C7D;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #FC5C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
     border-radius: 5%;
     box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
@@ -329,6 +341,10 @@
 #calendar-day8 {
     font-size:  16px;
     padding-top: 20px;
+}
+#calendar8:active{
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 
 #calendar-month-year8 {
@@ -386,10 +402,22 @@
     color: white;
 }
 .banner a{
-    background-color: red;
+    background-color: dimgray;
+
 }
+
+.banner a p:hover{
+    background-color: dimgray;
+    opacity: 1;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+
+
 .banner a p{
-    background-color: red;
+    background-color: dimgray;
+    opacity: 0.7;
+    filter: alpha(opacity=70); /* For IE8 and earlier */
     width: 140px;
     padding: 0.75em 0;
     margin-left: auto;

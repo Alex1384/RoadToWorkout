@@ -21,6 +21,7 @@
 </head>
 
 <body>
+    <div id="back"></div>
 
     <div class="container">
         <div class="banner">
