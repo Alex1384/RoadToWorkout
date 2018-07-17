@@ -1,4 +1,6 @@
-<%--
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="fr.wildcodeschool.roadtoworkout.ObjectifModel" %>
+<%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
   User: wilder
   Date: 13/07/18
@@ -6,6 +8,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <title>Programme</title>
@@ -90,14 +93,18 @@
                         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                     </ol>
 
+                    <c:forEach items= "${sessionScope.key}" var = "currentValue">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="container">
-                                <h3>Groupe musculaire 1</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <h3 value="${currentValue.idObjectif}">${currentValue.muscularGroup}</h3>
                             </div>
                         </div>
-                        <div class="carousel-item">
+
+
+
+
+                        <!--<div class="carousel-item">
                             <div class="container">
                                 <h3>Groupe musculaire 2</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -109,7 +116,10 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                         </div>
+                        -->
                     </div>
+                    </c:forEach>
+
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
@@ -124,7 +134,6 @@
                 <table class="table">
                     <thead class="thead-dark">
                     <tr>
-                        <th scope="col">Muscles</th>
                         <th scope="col">Excercices</th>
                         <th scope="col">Séries</th>
                         <th scope="col">Répétitions</th>
@@ -132,13 +141,23 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <th scope="row">muscle 1</th>
+                    <c:forEach items= "${sessionScope.key}" var = "currentValue">
+                        <tr>
+                            <td>${currentValue.exercice}</td>
+                            <td>${currentValue.serie}</td>
+                            <td>${currentValue.repetitions}</td>
+                            <td>${currentValue.repos} s</td>
+                        </tr>
+                    </c:forEach>
+
+                   <!-- <tr>
                         <td>exercice 1</td>
                         <td>série 1</td>
                         <td>répétition 1</td>
                         <td>1 s</td>
                     </tr>
+                    -->
+
                     </tbody>
                 </table>
             </div>
