@@ -15,11 +15,10 @@
 </head>
 <body>
     <div class ="container-btn">
-    <div class="container">
         <form method="post" action="${pageContext.request.contextPath}/connect">
             <label>E-mail</label>
             <br />
-            <input id="email" type="text" name="email" placeholder="myemail@mail.fr">
+            <input id="emailValue" type="text" name="emailValue" placeholder="myemail@mail.fr">
             <br />
             <br />
             <label for="pass">Votre mot de passe :</label>
@@ -29,12 +28,15 @@
             <br />
             <input type="submit" class="btn" value="Se connecter"/>
         </form>
-        <br />
-    </div>
-    <br />
+        <c:if test="${not empty requestScope.error}">
+            <p class="btn">${error}</p>
+        </c:if>
 
+        <br />
+
+    <br />
     <div class="container">
-        <input type="submit" class="btn" value="S'inscrire"  action="${pageContext.request.contextPath}/connect" />
+        <input type="submit" class="btn" value="S'inscrire"/>
     </div>
 </div>
 

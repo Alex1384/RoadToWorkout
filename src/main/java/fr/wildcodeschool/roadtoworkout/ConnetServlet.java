@@ -13,18 +13,23 @@ public class ConnetServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //this.getServletContext().getRequestDispatcher("/Connection.jsp").forward(request, response);
 
-        String emailValue = request.getParameter("email");
+        String emailValue = request.getParameter("emailValue");
 
-       /* if(emailValue == null || emailValue.isEmpty()){
-            PrintWriter out = response.getWriter();
-            out.print("Veillez renseigner votre email");
+       if(emailValue == null || emailValue.isEmpty()){
+           request.setAttribute("error", "Adresse email requise");
+           this.getServletContext()
+                   .getRequestDispatcher("/connection.jsp")
+                   .forward(request, response);
         }
-        */
+        else {
+           PrintWriter outA = response.getWriter();
+           outA.println("Ok pour la suite");
+       }
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        this.getServletContext().getRequestDispatcher("/Connection.jsp").forward(request, response);
+        this.getServletContext().getRequestDispatcher("/connection.jsp").forward(request, response);
 
     }
 }
