@@ -21,7 +21,7 @@ public class ConnetServlet extends HttpServlet {
         }
         else {
            PrintWriter outA = response.getWriter();
-           outA.println("Ok pour la suite");
+           outA.println("Ok pour la suite, reste a faire la connection BDD");
        }
     }
 
