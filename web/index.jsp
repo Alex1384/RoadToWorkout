@@ -12,5 +12,6 @@
 </head>
 <body>
 
+<jsp:forward page ="/formulaire.jsp"/>
 </body>
 </html>
