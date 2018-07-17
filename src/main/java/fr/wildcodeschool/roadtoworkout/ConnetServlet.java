@@ -11,8 +11,6 @@ import java.io.PrintWriter;
 @WebServlet(name = "ConnetServlet", urlPatterns = "/connect")
 public class ConnetServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        //this.getServletContext().getRequestDispatcher("/Connection.jsp").forward(request, response);
-
         String emailValue = request.getParameter("emailValue");
 
        if(emailValue == null || emailValue.isEmpty()){

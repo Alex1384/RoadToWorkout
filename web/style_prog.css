@@ -435,11 +435,11 @@ body{
     border-radius: 100px;
 }
 
-/* Style des boutons connections */
+/* Style partie connection et des boutons connections */
 .btn, form {
     font: 1rem 'Fira Sans', sans-serif;
     padding: .5rem;
-    background: rgba(5, 12, 40, 0.55);
+    background: rgba(94, 99, 110, 0.55);
     color:white;
     border: none;
     border-radius: 4px;
@@ -456,4 +456,15 @@ body{
     margin-top: 10%;
     padding: auto;
     display: block;
+}
+a {
+    text-decoration: none;
+}
+
+h1{
+    font-size:1rem;
+    text-align: center;
+    font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+    color: white;
+
 }

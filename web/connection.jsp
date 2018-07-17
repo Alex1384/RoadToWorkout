@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="style_prog.css">
 </head>
 <body>
+<h1 class="btn"> Bienvenue sur RoadToWorkOut ! </h1>
     <div class ="container-btn">
         <form method="post" action="${pageContext.request.contextPath}/connect">
             <label>E-mail</label>
@@ -28,15 +29,16 @@
             <br />
             <input type="submit" class="btn" value="Se connecter"/>
         </form>
+
         <c:if test="${not empty requestScope.error}">
             <p class="btn">${error}</p>
         </c:if>
-
         <br />
-
     <br />
     <div class="container">
-        <input type="submit" class="btn" value="S'inscrire"/>
+        <a href="/home">
+        <input type="submit" class="btn" value="S'inscrire" onclick=""/>
+        </a>
     </div>
 </div>
 
