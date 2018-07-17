@@ -435,4 +435,25 @@ body{
     border-radius: 100px;
 }
 
+/* Style des boutons connections */
+.btn, form {
+    font: 1rem 'Fira Sans', sans-serif;
+    padding: .5rem;
+    background: rgba(5, 12, 40, 0.55);
+    color:white;
+    border: none;
+    border-radius: 4px;
+    margin: auto;
+    display: block;
+    width:450px;
+}
+.btn :hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
 
+.container-btn {
+    text-align: center;
+    margin-top: 10%;
+    padding: auto;
+    display: block;
+}
