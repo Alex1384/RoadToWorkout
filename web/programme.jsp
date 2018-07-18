@@ -35,8 +35,9 @@
 
 <div class="container">
     <div class="banner">
-        <a class="banner_btn"><p>Mon objectif :<span> ... </span></p></a>
+        <a class="banner_btn"><p>Mon objectif : ${sessionScope.nameObjectif}</p></a>
     </div>
+
 
     <div id="calendar">
         <p id="calendar-day"></p>
@@ -119,7 +120,7 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <c:forEach items="${sessionScope.topBody}" var="exercices">
+                            <c:forEach items="${sessionScope.topBodyMonday}" var="exercices">
                                 <tr>
                                     <td>${exercices.muscle}</td>
                                     <td>${exercices.exercice}</td>
@@ -150,7 +151,7 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <c:forEach items="${sessionScope.bottomBody}" var="exercices">
+                            <c:forEach items="${sessionScope.bottomBodyMonday}" var="exercices">
                                 <tr>
                                     <td>${exercices.muscle}</td>
                                     <td>${exercices.exercice}</td>
@@ -164,7 +165,6 @@
                     </div>
                 </div>
             </div>
-
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
@@ -174,8 +174,6 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-
-
     </div>
 </div>
 

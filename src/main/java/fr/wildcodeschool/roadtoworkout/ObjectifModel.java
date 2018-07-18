@@ -13,7 +13,6 @@ public class ObjectifModel {
     private int idGroupMuscular;
     private String nameGroupMuscular;
 
-
     public ObjectifModel(int idObjectif, int idExercices, String day, int idGroupMuscular, String nameGroupMuscular, String muscle, String exercice, int serie, int repetitions, int repos) {
         this.idObjectif = idObjectif;
         this.idExercices = idExercices;
@@ -26,6 +25,7 @@ public class ObjectifModel {
         this.repetitions = repetitions;
         this.repos = repos;
     }
+
 
     public int getIdGroupMuscular() {
         return idGroupMuscular;
