@@ -3,22 +3,52 @@ package fr.wildcodeschool.roadtoworkout;
 public class ObjectifModel {
 
     private String day;
-    private String muscularGroup;
+    private String muscle;
     private String exercice;
     private int serie;
     private int repetitions;
     private int repos;
     private int idObjectif;
+    private int idExercices;
+    private int idGroupMuscular;
+    private String nameGroupMuscular;
 
 
-    public ObjectifModel(int idObjectif, String day, String muscularGroup, String exercice, int serie, int repetitions, int repos) {
+    public ObjectifModel(int idObjectif, int idExercices, String day, int idGroupMuscular, String nameGroupMuscular, String muscle, String exercice, int serie, int repetitions, int repos) {
         this.idObjectif = idObjectif;
+        this.idExercices = idExercices;
         this.day = day;
-        this.muscularGroup = muscularGroup;
+        this.muscle = muscle;
+        this.idGroupMuscular = idGroupMuscular;
+        this.nameGroupMuscular = nameGroupMuscular;
         this.exercice = exercice;
         this.serie = serie;
         this.repetitions = repetitions;
         this.repos = repos;
+    }
+
+    public int getIdGroupMuscular() {
+        return idGroupMuscular;
+    }
+
+    public void setIdGroupMuscular(int idGroupMuscular) {
+        this.idGroupMuscular = idGroupMuscular;
+    }
+
+    public String getNameGroupMuscular() {
+        return nameGroupMuscular;
+    }
+
+    public void setNameGroupMuscular(String nameGroupMuscular) {
+        this.nameGroupMuscular = nameGroupMuscular;
+    }
+
+    public int getIdExercices() {
+        return idExercices;
+    }
+
+    public void setIdExercices(int idExercices) {
+        this.idExercices = idExercices;
     }
 
     public int getIdObjectif() {
@@ -37,12 +67,12 @@ public class ObjectifModel {
         this.day = day;
     }
 
-    public String getMuscularGroup() {
-        return muscularGroup;
+    public String getMuscle() {
+        return muscle;
     }
 
-    public void setMuscularGroup(String muscularGroup) {
-        this.muscularGroup = muscularGroup;
+    public void setMuscle(String muscle) {
+        this.muscle = muscle;
     }
 
     public String getExercice() {

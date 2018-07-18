@@ -41,12 +41,16 @@ public class ProgrammeServlet extends HttpServlet {
             preparedStatementOne.setInt(1, idOfObjectif);
             ResultSet resultSet = preparedStatementOne.executeQuery();
 
+            ArrayList<ObjectifModel> topBody = new ArrayList<>();
+            ArrayList<ObjectifModel> bottomBody = new ArrayList<>();
+
             while (resultSet.next()) {
 
                 String nameObjectif = resultSet.getString("name_objectif");
+
                 int idExercice = resultSet.getInt("id_exercices");
                 String jour = resultSet.getString("jour");
-                String muscularGroup = resultSet.getString("groupe_muscle");
+                String muscle = resultSet.getString("groupe_muscle");
                 String exercice = resultSet.getString("exercice");
                 int serie = resultSet.getInt("serie");
                 int repetitions = resultSet.getInt("repetitions");
@@ -54,11 +58,18 @@ public class ProgrammeServlet extends HttpServlet {
                 int idMusclularGroup = resultSet.getInt("id_groupe_musculaire");
                 String nameMuscularGroup = resultSet.getString("name_groupe");
 
-                ObjectifModel objectifModel = new ObjectifModel(idOfObjectif, jour, muscularGroup, exercice, serie, repetitions, repos);
-                objectifModelArrayList.add(objectifModel);
+                ObjectifModel objectifModel = new ObjectifModel(idOfObjectif, idExercice, jour, idMusclularGroup, nameMuscularGroup, muscle, exercice, serie, repetitions, repos);
+                //objectifModelArrayList.add(objectifModel);
+
+                if (idMusclularGroup  == 1) {
+                    topBody.add(objectifModel);
+                } else {
+                    bottomBody.add(objectifModel);
+                }
 
             }
-            request.getSession().setAttribute("key", objectifModelArrayList);
+            request.getSession().setAttribute("topBody", topBody);
+            request.getSession().setAttribute("bottomBody", bottomBody);
 
             this.getServletContext().getRequestDispatcher("/programme.jsp").forward(request, response);
 

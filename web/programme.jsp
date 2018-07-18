@@ -98,39 +98,71 @@
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
 
             <div class="carousel-inner">
-                <c:forEach items="${sessionScope.key}" var="muscularGroup" varStatus="loop">
-                    <div class="carousel-item <c:if test='${loop.index == 0}'>active</c:if>">
-                        <div class="container">
-                            <h3>${muscularGroup.muscularGroup}</h3>
-                        </div>
-                        <div style="overflow-x:auto;">
-                            <table class="table">
-                                <thead class="thead-dark">
-                                <tr>
-                                    <th scope="col">Excercices</th>
-                                    <th scope="col">Séries</th>
-                                    <th scope="col">Répétitions</th>
-                                    <th scope="col">Repos</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <c:forEach items="${sessionScope.key}" var="currentValue" >
-                                    <tr>
-                                        <td>${currentValue.exercice}</td>
-                                        <td>${currentValue.serie}</td>
-                                        <td>${currentValue.repetitions}</td>
-                                        <td>${currentValue.repos} s</td>
-                                    </tr>
-                                </c:forEach>
-                                </tbody>
-                            </table>
-                        </div>
+
+                <div class="carousel-item active">
+                    <div class="container">
+                        <h3>haut du corps</h3>
                     </div>
-                </c:forEach>
+
+                    <div style="overflow-x:auto;">
+                        <table class="table">
+                            <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Muscle</th>
+                                <th scope="col">Excercices</th>
+                                <th scope="col">Séries</th>
+                                <th scope="col">Répétitions</th>
+                                <th scope="col">Repos</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <c:forEach items="${sessionScope.topBody}" var="exercices">
+                                <tr>
+                                    <td>${exercices.muscle}</td>
+                                    <td>${exercices.exercice}</td>
+                                    <td>${exercices.serie}</td>
+                                    <td>${exercices.repetitions}</td>
+                                    <td>${exercices.repos} s</td>
+                                </tr>
+                            </c:forEach>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="container">
+                        <h3>Bas du corps</h3>
+                    </div>
+
+                    <div style="overflow-x:auto;">
+                        <table class="table">
+                            <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Muscle</th>
+                                <th scope="col">Excercices</th>
+                                <th scope="col">Séries</th>
+                                <th scope="col">Répétitions</th>
+                                <th scope="col">Repos</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <c:forEach items="${sessionScope.bottomBody}" var="exercices">
+                                <tr>
+                                    <td>${exercices.muscle}</td>
+                                    <td>${exercices.exercice}</td>
+                                    <td>${exercices.serie}</td>
+                                    <td>${exercices.repetitions}</td>
+                                    <td>${exercices.repos} s</td>
+                                </tr>
+                            </c:forEach>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
 
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -142,7 +174,6 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-
 
 
     </div>
