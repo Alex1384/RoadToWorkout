@@ -104,7 +104,7 @@
 
                 <div class="carousel-item active">
                     <div class="container">
-                        <h3>haut du corps</h3>
+                        <h3>Haut du corps</h3>
                     </div>
 
                     <div style="overflow-x:auto;">

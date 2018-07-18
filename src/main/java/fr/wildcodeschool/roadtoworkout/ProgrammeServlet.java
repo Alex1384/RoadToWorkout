@@ -59,7 +59,6 @@ public class ProgrammeServlet extends HttpServlet {
                 String nameMuscularGroup = resultSet.getString("name_groupe");
 
                 ObjectifModel objectifModel = new ObjectifModel(idOfObjectif, idExercice, jour, idMusclularGroup, nameMuscularGroup, muscle, exercice, serie, repetitions, repos);
-                //objectifModelArrayList.add(objectifModel);
 
                 if (idMusclularGroup  == 1) {
                     topBody.add(objectifModel);
