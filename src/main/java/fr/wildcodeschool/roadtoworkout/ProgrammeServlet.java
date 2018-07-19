@@ -41,9 +41,6 @@ public class ProgrammeServlet extends HttpServlet {
             preparedStatementOne.setInt(1, idOfObjectif);
             ResultSet resultSet = preparedStatementOne.executeQuery();
 
-            //ArrayList<ObjectifModel> topBody = new ArrayList<>();
-            //ArrayList<ObjectifModel> bottomBody = new ArrayList<>();
-
             //ArrayList de chaque jour :
             //Lundi :
             ArrayList<ObjectifModel> topBodyMonday = new ArrayList<>();
@@ -84,52 +81,108 @@ public class ProgrammeServlet extends HttpServlet {
                 ObjectifModel objectifModel = new ObjectifModel(idOfObjectif, idExercice, jour, idMusclularGroup, nameMuscularGroup, muscle, exercice, serie, repetitions, repos);
 
                 if (jour.equals("lundi")) {
-                    if (idMusclularGroup  == 1) {
-                        topBodyMonday.add(objectifModel);
+                    if (nameMuscularGroup.equals("Repos")){
+                        request.getSession().setAttribute("muscularGroupTopMonday", nameMuscularGroup);
+                        request.getSession().setAttribute("muscularGroupBottomMonday", nameMuscularGroup);
                     } else {
-                        bottomBodyMonday.add(objectifModel);
+                        if (idMusclularGroup  == 1) {
+                            topBodyMonday.add(objectifModel);
+                            request.getSession().setAttribute("muscularGroupTopMonday", nameMuscularGroup);
+                        } else {
+                            bottomBodyMonday.add(objectifModel);
+                            request.getSession().setAttribute("muscularGroupBottomMonday", nameMuscularGroup);
+                        }
                     }
 
                 } else if (jour.equals("mardi")) {
-                    if (idMusclularGroup  == 1) {
-                        topBodyTuesday.add(objectifModel);
-                    } else {
-                        bottomBodyTuesday.add(objectifModel);
+                    if (nameMuscularGroup.equals("Repos")){
+                        request.getSession().setAttribute("muscularGroupTopTuesday", nameMuscularGroup);
+                        request.getSession().setAttribute("muscularGroupBottomTuesday", nameMuscularGroup);
+                    }
+                    else {
+                        if (idMusclularGroup  == 1) {
+                            topBodyTuesday.add(objectifModel);
+                            request.getSession().setAttribute("muscularGroupTopTuesday", nameMuscularGroup);
+                        } else {
+                            bottomBodyTuesday.add(objectifModel);
+                            request.getSession().setAttribute("muscularGroupBottomTuesday", nameMuscularGroup);
+                        }
                     }
 
                 } else if (jour.equals("mercredi")) {
-                    if (idMusclularGroup  == 1) {
-                        topBodyWednesday.add(objectifModel);
-                    } else {
-                        bottomBodyWednesday.add(objectifModel);
+                    if (nameMuscularGroup.equals("Repos")){
+                        request.getSession().setAttribute("muscularGroupTopWednesday", nameMuscularGroup);
+                        request.getSession().setAttribute("muscularGroupBottomWednesday", nameMuscularGroup);
+                    }
+                    else {
+                        if (idMusclularGroup  == 1) {
+                            topBodyWednesday.add(objectifModel);
+                            request.getSession().setAttribute("muscularGroupTopWednesday", nameMuscularGroup);
+                        } else {
+                            bottomBodyWednesday.add(objectifModel);
+                            request.getSession().setAttribute("muscularGroupBottomWednesday", nameMuscularGroup);
+                        }
                     }
 
+
                 } else if (jour.equals("jeudi")) {
+                    if (nameMuscularGroup.equals("Repos")){
+                        request.getSession().setAttribute("muscularGroupTopThursday", nameMuscularGroup);
+                        request.getSession().setAttribute("muscularGroupBottomThursday", nameMuscularGroup);
+                    }
                     if (idMusclularGroup  == 1) {
                         topBodyThursday.add(objectifModel);
+                        request.getSession().setAttribute("muscularGroupTopThursday", nameMuscularGroup);
                     } else {
                         bottomBodyThursday.add(objectifModel);
+                        request.getSession().setAttribute("muscularGroupBottomThursday", nameMuscularGroup);
                     }
 
                 } else if (jour.equals("vendredi")) {
-                    if (idMusclularGroup  == 1) {
-                        topBodyFriday.add(objectifModel);
-                    } else {
-                        bottomBodyFriday.add(objectifModel);
+                    if (nameMuscularGroup.equals("Repos")){
+                        request.getSession().setAttribute("muscularGroupTopFriday", nameMuscularGroup);
+                        request.getSession().setAttribute("muscularGroupBottomFriday", nameMuscularGroup);
                     }
+                    else {
+                        if (idMusclularGroup  == 1) {
+                            topBodyFriday.add(objectifModel);
+                            request.getSession().setAttribute("muscularGroupTopFriday", nameMuscularGroup);
+                        } else {
+                            bottomBodyFriday.add(objectifModel);
+                            request.getSession().setAttribute("muscularGroupBottomFriday", nameMuscularGroup);
+                        }
+                    }
+
 
                 } else if (jour.equals("samedi")) {
-                    if (idMusclularGroup  == 1) {
-                        topBodySaturday.add(objectifModel);
-                    } else {
-                        bottomBodySaturday.add(objectifModel);
+                    if (nameMuscularGroup.equals("Repos")){
+                        request.getSession().setAttribute("muscularGroupTopSaturday", nameMuscularGroup);
+                        request.getSession().setAttribute("muscularGroupBottomSaturday", nameMuscularGroup);
+                    }
+                    else {
+                        if (idMusclularGroup  == 1) {
+                            request.getSession().setAttribute("muscularGroupTopSaturday", nameMuscularGroup);
+                            topBodySaturday.add(objectifModel);
+                        } else {
+                            bottomBodySaturday.add(objectifModel);
+                            request.getSession().setAttribute("muscularGroupBottomSaturday", nameMuscularGroup);
+                        }
                     }
 
+
                 } else if (jour.equals("dimanche")) {
-                    if (idMusclularGroup  == 1) {
-                        topBodySunday.add(objectifModel);
-                    } else {
-                        bottomBodySunday.add(objectifModel);
+                    if (nameMuscularGroup.equals("Repos")){
+                        request.getSession().setAttribute("muscularGroupTopSunday", nameMuscularGroup);
+                        request.getSession().setAttribute("muscularGroupBottomSunday", nameMuscularGroup);
+                    }
+                    else {
+                        if (idMusclularGroup  == 1) {
+                            topBodySunday.add(objectifModel);
+                            request.getSession().setAttribute("muscularGroupTopSunday", nameMuscularGroup);
+                        } else {
+                            bottomBodySunday.add(objectifModel);
+                            request.getSession().setAttribute("muscularGroupBottomSunday", nameMuscularGroup);
+                        }
                     }
 
                 }

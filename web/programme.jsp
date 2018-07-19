@@ -105,7 +105,8 @@
 
                 <div class="carousel-item active">
                     <div class="container">
-                        <h3>Haut du corps</h3>
+                        <h3>${sessionScope.muscularGroupTopMonday}</h3>
+
                     </div>
 
                     <div style="overflow-x:auto;">
@@ -136,7 +137,7 @@
 
                 <div class="carousel-item">
                     <div class="container">
-                        <h3>Bas du corps</h3>
+                        <h3>${sessionScope.muscularGroupBottomMonday}</h3>
                     </div>
 
                     <div style="overflow-x:auto;">
@@ -184,15 +185,15 @@
         <div id="carouselExampleIndicators2" class="carousel slide" data-interval="false" data-ride="carousel">
 
             <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
             </ol>
 
             <div class="carousel-inner">
 
                 <div class="carousel-item active">
                     <div class="container">
-                        <h3>Haut du corps</h3>
+                        <h3>${sessionScope.muscularGroupTopTuesday}</h3>
                     </div>
 
                     <div style="overflow-x:auto;">
@@ -207,13 +208,13 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <c:forEach items="${sessionScope.topBodyTuesday}" var="exercices">
+                            <c:forEach items="${sessionScope.topBodyTuesday}" var="topBodyTuesday">
                                 <tr>
-                                    <td>${exercices.muscle}</td>
-                                    <td>${exercices.exercice}</td>
-                                    <td>${exercices.serie}</td>
-                                    <td>${exercices.repetitions}</td>
-                                    <td>${exercices.repos} s</td>
+                                    <td>${topBodyTuesday.muscle}</td>
+                                    <td>${topBodyTuesday.exercice}</td>
+                                    <td>${topBodyTuesday.serie}</td>
+                                    <td>${topBodyTuesday.repetitions}</td>
+                                    <td>${topBodyTuesday.repos} s</td>
                                 </tr>
                             </c:forEach>
                             </tbody>
@@ -223,7 +224,7 @@
 
                 <div class="carousel-item">
                     <div class="container">
-                        <h3>Bas du corps</h3>
+                        <h3>${sessionScope.muscularGroupBottomTuesday}</h3>
                     </div>
 
                     <div style="overflow-x:auto;">
@@ -238,13 +239,13 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <c:forEach items="${sessionScope.bottomBodyTuesday}" var="exercices">
+                            <c:forEach items="${sessionScope.bottomBodyTuesday}" var="bottomBodyTuesday">
                                 <tr>
-                                    <td>${exercices.muscle}</td>
-                                    <td>${exercices.exercice}</td>
-                                    <td>${exercices.serie}</td>
-                                    <td>${exercices.repetitions}</td>
-                                    <td>${exercices.repos} s</td>
+                                    <td>${bottomBodyTuesday.muscle}</td>
+                                    <td>${bottomBodyTuesday.exercice}</td>
+                                    <td>${bottomBodyTuesday.serie}</td>
+                                    <td>${bottomBodyTuesday.repetitions}</td>
+                                    <td>${bottomBodyTuesday.repos} s</td>
                                 </tr>
                             </c:forEach>
                             </tbody>
@@ -252,11 +253,11 @@
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
@@ -271,15 +272,15 @@
         <div id="carouselExampleIndicators3" class="carousel slide" data-interval="false" data-ride="carousel">
 
             <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
             </ol>
 
             <div class="carousel-inner">
 
                 <div class="carousel-item active">
                     <div class="container">
-                        <h3>Haut du corps</h3>
+                        <h3>${sessionScope.muscularGroupTopWednesday}</h3>
                     </div>
 
                     <div style="overflow-x:auto;">
@@ -294,13 +295,13 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <c:forEach items="${sessionScope.topBodyWednesday}" var="exercices">
+                            <c:forEach items="${sessionScope.topBodyWednesday}" var="topBodyWednesday">
                                 <tr>
-                                    <td>${exercices.muscle}</td>
-                                    <td>${exercices.exercice}</td>
-                                    <td>${exercices.serie}</td>
-                                    <td>${exercices.repetitions}</td>
-                                    <td>${exercices.repos} s</td>
+                                    <td>${topBodyWednesday.muscle}</td>
+                                    <td>${topBodyWednesday.exercice}</td>
+                                    <td>${topBodyWednesday.serie}</td>
+                                    <td>${topBodyWednesday.repetitions}</td>
+                                    <td>${topBodyWednesday.repos} s</td>
                                 </tr>
                             </c:forEach>
                             </tbody>
@@ -310,7 +311,7 @@
 
                 <div class="carousel-item">
                     <div class="container">
-                        <h3>Bas du corps</h3>
+                        <h3>${sessionScope.muscularGroupBottomWednesday}</h3>
                     </div>
 
                     <div style="overflow-x:auto;">
@@ -325,13 +326,13 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <c:forEach items="${sessionScope.bottomBodyWednesday}" var="exercices">
+                            <c:forEach items="${sessionScope.bottomBodyWednesday}" var="bottomBodyWednesday">
                                 <tr>
-                                    <td>${exercices.muscle}</td>
-                                    <td>${exercices.exercice}</td>
-                                    <td>${exercices.serie}</td>
-                                    <td>${exercices.repetitions}</td>
-                                    <td>${exercices.repos} s</td>
+                                    <td>${bottomBodyWednesday.muscle}</td>
+                                    <td>${bottomBodyWednesday.exercice}</td>
+                                    <td>${bottomBodyWednesday.serie}</td>
+                                    <td>${bottomBodyWednesday.repetitions}</td>
+                                    <td>${bottomBodyWednesday.repos} s</td>
                                 </tr>
                             </c:forEach>
                             </tbody>
@@ -339,11 +340,11 @@
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
@@ -358,15 +359,15 @@
         <div id="carouselExampleIndicators4" class="carousel slide" data-interval="false" data-ride="carousel">
 
             <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators4" data-slide-to="1"></li>
             </ol>
 
             <div class="carousel-inner">
 
                 <div class="carousel-item active">
                     <div class="container">
-                        <h3>Haut du corps</h3>
+                        <h3>${sessionScope.muscularGroupTopThursday}</h3>
                     </div>
 
                     <div style="overflow-x:auto;">
@@ -381,13 +382,13 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <c:forEach items="${sessionScope.topBodyThursday}" var="exercices">
+                            <c:forEach items="${sessionScope.topBodyThursday}" var="topBodyThursday">
                                 <tr>
-                                    <td>${exercices.muscle}</td>
-                                    <td>${exercices.exercice}</td>
-                                    <td>${exercices.serie}</td>
-                                    <td>${exercices.repetitions}</td>
-                                    <td>${exercices.repos} s</td>
+                                    <td>${topBodyThursday.muscle}</td>
+                                    <td>${topBodyThursday.exercice}</td>
+                                    <td>${topBodyThursday.serie}</td>
+                                    <td>${topBodyThursday.repetitions}</td>
+                                    <td>${topBodyThursday.repos} s</td>
                                 </tr>
                             </c:forEach>
                             </tbody>
@@ -397,7 +398,7 @@
 
                 <div class="carousel-item">
                     <div class="container">
-                        <h3>Bas du corps</h3>
+                        <h3>${sessionScope.muscularGroupBottomThursday}</h3>
                     </div>
 
                     <div style="overflow-x:auto;">
@@ -412,13 +413,13 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <c:forEach items="${sessionScope.bottomBodyThursday}" var="exercices">
+                            <c:forEach items="${sessionScope.bottomBodyThursday}" var="bottomBodyThursday">
                                 <tr>
-                                    <td>${exercices.muscle}</td>
-                                    <td>${exercices.exercice}</td>
-                                    <td>${exercices.serie}</td>
-                                    <td>${exercices.repetitions}</td>
-                                    <td>${exercices.repos} s</td>
+                                    <td>${bottomBodyThursday.muscle}</td>
+                                    <td>${bottomBodyThursday.exercice}</td>
+                                    <td>${bottomBodyThursday.serie}</td>
+                                    <td>${bottomBodyThursday.repetitions}</td>
+                                    <td>${bottomBodyThursday.repos} s</td>
                                 </tr>
                             </c:forEach>
                             </tbody>
@@ -426,11 +427,11 @@
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#carouselExampleIndicators4" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carouselExampleIndicators4" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
@@ -445,15 +446,15 @@
         <div id="carouselExampleIndicators5" class="carousel slide" data-interval="false" data-ride="carousel">
 
             <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators5" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators5" data-slide-to="1"></li>
             </ol>
 
             <div class="carousel-inner">
 
                 <div class="carousel-item active">
                     <div class="container">
-                        <h3>Haut du corps</h3>
+                        <h3>${sessionScope.muscularGroupTopFriday}</h3>
                     </div>
 
                     <div style="overflow-x:auto;">
@@ -468,13 +469,13 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <c:forEach items="${sessionScope.topBodyFriday}" var="exercices">
+                            <c:forEach items="${sessionScope.topBodyFriday}" var="topBodyFriday">
                                 <tr>
-                                    <td>${exercices.muscle}</td>
-                                    <td>${exercices.exercice}</td>
-                                    <td>${exercices.serie}</td>
-                                    <td>${exercices.repetitions}</td>
-                                    <td>${exercices.repos} s</td>
+                                    <td>${topBodyFriday.muscle}</td>
+                                    <td>${topBodyFriday.exercice}</td>
+                                    <td>${topBodyFriday.serie}</td>
+                                    <td>${topBodyFriday.repetitions}</td>
+                                    <td>${topBodyFriday.repos} s</td>
                                 </tr>
                             </c:forEach>
                             </tbody>
@@ -484,7 +485,7 @@
 
                 <div class="carousel-item">
                     <div class="container">
-                        <h3>Bas du corps</h3>
+                        <h3>${sessionScope.muscularGroupBottomFriday}</h3>
                     </div>
 
                     <div style="overflow-x:auto;">
@@ -499,13 +500,13 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <c:forEach items="${sessionScope.bottomBodyFriday}" var="exercices">
+                            <c:forEach items="${sessionScope.bottomBodyFriday}" var="bottomBodyFriday">
                                 <tr>
-                                    <td>${exercices.muscle}</td>
-                                    <td>${exercices.exercice}</td>
-                                    <td>${exercices.serie}</td>
-                                    <td>${exercices.repetitions}</td>
-                                    <td>${exercices.repos} s</td>
+                                    <td>${bottomBodyFriday.muscle}</td>
+                                    <td>${bottomBodyFriday.exercice}</td>
+                                    <td>${bottomBodyFriday.serie}</td>
+                                    <td>${bottomBodyFriday.repetitions}</td>
+                                    <td>${bottomBodyFriday.repos} s</td>
                                 </tr>
                             </c:forEach>
                             </tbody>
@@ -513,11 +514,11 @@
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#carouselExampleIndicators5" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carouselExampleIndicators5" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
@@ -532,15 +533,15 @@
         <div id="carouselExampleIndicators6" class="carousel slide" data-interval="false" data-ride="carousel">
 
             <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators6" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators6" data-slide-to="1"></li>
             </ol>
 
             <div class="carousel-inner">
 
                 <div class="carousel-item active">
                     <div class="container">
-                        <h3>Haut du corps</h3>
+                        <h3>${sessionScope.muscularGroupTopSaturday}</h3>
                     </div>
 
                     <div style="overflow-x:auto;">
@@ -555,13 +556,13 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <c:forEach items="${sessionScope.topBodySaturday}" var="exercices">
+                            <c:forEach items="${sessionScope.topBodySaturday}" var="topBodySaturday">
                                 <tr>
-                                    <td>${exercices.muscle}</td>
-                                    <td>${exercices.exercice}</td>
-                                    <td>${exercices.serie}</td>
-                                    <td>${exercices.repetitions}</td>
-                                    <td>${exercices.repos} s</td>
+                                    <td>${topBodySaturday.muscle}</td>
+                                    <td>${topBodySaturday.exercice}</td>
+                                    <td>${topBodySaturday.serie}</td>
+                                    <td>${topBodySaturday.repetitions}</td>
+                                    <td>${topBodySaturday.repos} s</td>
                                 </tr>
                             </c:forEach>
                             </tbody>
@@ -571,7 +572,7 @@
 
                 <div class="carousel-item">
                     <div class="container">
-                        <h3>Bas du corps</h3>
+                        <h3>${sessionScope.muscularGroupBottomSaturday}</h3>
                     </div>
 
                     <div style="overflow-x:auto;">
@@ -586,13 +587,13 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <c:forEach items="${sessionScope.bottomBodySaturday}" var="exercices">
+                            <c:forEach items="${sessionScope.bottomBodySaturday}" var="bottomBodySaturday">
                                 <tr>
-                                    <td>${exercices.muscle}</td>
-                                    <td>${exercices.exercice}</td>
-                                    <td>${exercices.serie}</td>
-                                    <td>${exercices.repetitions}</td>
-                                    <td>${exercices.repos} s</td>
+                                    <td>${bottomBodySaturday.muscle}</td>
+                                    <td>${bottomBodySaturday.exercice}</td>
+                                    <td>${bottomBodySaturday.serie}</td>
+                                    <td>${bottomBodySaturday.repetitions}</td>
+                                    <td>${bottomBodySaturday.repos} s</td>
                                 </tr>
                             </c:forEach>
                             </tbody>
@@ -600,11 +601,11 @@
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#carouselExampleIndicators6" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carouselExampleIndicators6" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
@@ -619,15 +620,15 @@
         <div id="carouselExampleIndicators7" class="carousel slide" data-interval="false" data-ride="carousel">
 
             <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators7" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators7" data-slide-to="1"></li>
             </ol>
 
             <div class="carousel-inner">
 
                 <div class="carousel-item active">
                     <div class="container">
-                        <h3>Haut du corps</h3>
+                        <h3>${sessionScope.muscularGroupTopSaturday}</h3>
                     </div>
 
                     <div style="overflow-x:auto;">
@@ -642,13 +643,13 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <c:forEach items="${sessionScope.topBodySunday}" var="exercices">
+                            <c:forEach items="${sessionScope.topBodySunday}" var="topBodySunday">
                                 <tr>
-                                    <td>${exercices.muscle}</td>
-                                    <td>${exercices.exercice}</td>
-                                    <td>${exercices.serie}</td>
-                                    <td>${exercices.repetitions}</td>
-                                    <td>${exercices.repos} s</td>
+                                    <td>${topBodySunday.muscle}</td>
+                                    <td>${topBodySunday.exercice}</td>
+                                    <td>${topBodySunday.serie}</td>
+                                    <td>${topBodySunday.repetitions}</td>
+                                    <td>${topBodySunday.repos} s</td>
                                 </tr>
                             </c:forEach>
                             </tbody>
@@ -658,7 +659,7 @@
 
                 <div class="carousel-item">
                     <div class="container">
-                        <h3>Bas du corps</h3>
+                        <h3>${sessionScope.muscularGroupBottomSaturday}</h3>
                     </div>
 
                     <div style="overflow-x:auto;">
@@ -673,13 +674,13 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <c:forEach items="${sessionScope.bottomBodySunday}" var="exercices">
+                            <c:forEach items="${sessionScope.bottomBodySunday}" var="bottomBodySunday">
                                 <tr>
-                                    <td>${exercices.muscle}</td>
-                                    <td>${exercices.exercice}</td>
-                                    <td>${exercices.serie}</td>
-                                    <td>${exercices.repetitions}</td>
-                                    <td>${exercices.repos} s</td>
+                                    <td>${bottomBodySunday.muscle}</td>
+                                    <td>${bottomBodySunday.exercice}</td>
+                                    <td>${bottomBodySunday.serie}</td>
+                                    <td>${bottomBodySunday.repetitions}</td>
+                                    <td>${bottomBodySunday.repos} s</td>
                                 </tr>
                             </c:forEach>
                             </tbody>
@@ -687,11 +688,11 @@
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#carouselExampleIndicators7" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carouselExampleIndicators7" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
