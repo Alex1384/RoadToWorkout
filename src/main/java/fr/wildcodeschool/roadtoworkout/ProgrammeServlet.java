@@ -33,11 +33,11 @@ public class ProgrammeServlet extends HttpServlet {
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/RoadToWorkOut", "root", "jecode4wcs");
 
             PreparedStatement preparedStatementOne = connection
-                    .prepareStatement("SELECT * FROM Objectif" +
-                            " INNER JOIN Effectuer ON Effectuer.id_objectif = Objectif.id_objectif" +
-                            " INNER JOIN Exercices ON Exercices.id_exercices = Effectuer.id_exercices" +
-                            " INNER JOIN Groupe_Musculaire ON Groupe_Musculaire.id_groupe_musculaire = Exercices.id_groupe_musculaire" +
-                            " WHERE Objectif.id_objectif = ?");
+                    .prepareStatement("SELECT * FROM objectif" +
+                            " INNER JOIN objectif_exercice ON objectif_exercice.id_objectif = objectif.id_objectif" +
+                            " INNER JOIN exercice ON exercice.id_exercice = objectif_exercice.id_exercice" +
+                            " INNER JOIN groupe_musculaire ON groupe_musculaire.id_groupe_musculaire = exercice.id_groupe_musculaire" +
+                            " WHERE objectif.id_objectif = ?");
             preparedStatementOne.setInt(1, idOfObjectif);
             ResultSet resultSet = preparedStatementOne.executeQuery();
 
@@ -71,10 +71,9 @@ public class ProgrammeServlet extends HttpServlet {
             while (resultSet.next()) {
 
                 String nameObjectif = resultSet.getString("name_objectif");
-
-                int idExercice = resultSet.getInt("id_exercices");
+                int idExercice = resultSet.getInt("id_exercice");
                 String jour = resultSet.getString("jour");
-                String muscle = resultSet.getString("groupe_muscle");
+                String muscle = resultSet.getString("muscle");
                 String exercice = resultSet.getString("exercice");
                 int serie = resultSet.getInt("serie");
                 int repetitions = resultSet.getInt("repetitions");
