@@ -120,13 +120,13 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <c:forEach items="${sessionScope.topBodyMonday}" var="exercices">
+                            <c:forEach items="${sessionScope.topBodyMonday}" var="topBodyMonday">
                                 <tr>
-                                    <td>${exercices.muscle}</td>
-                                    <td>${exercices.exercice}</td>
-                                    <td>${exercices.serie}</td>
-                                    <td>${exercices.repetitions}</td>
-                                    <td>${exercices.repos} s</td>
+                                    <td>${topBodyMonday.muscle}</td>
+                                    <td>${topBodyMonday.exercice}</td>
+                                    <td>${topBodyMonday.serie}</td>
+                                    <td>${topBodyMonday.repetitions}</td>
+                                    <td>${topBodyMonday.repos} s</td>
                                 </tr>
                             </c:forEach>
                             </tbody>
@@ -151,13 +151,13 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <c:forEach items="${sessionScope.bottomBodyMonday}" var="exercices">
+                            <c:forEach items="${sessionScope.bottomBodyMonday}" var="bottomBodyMonday">
                                 <tr>
-                                    <td>${exercices.muscle}</td>
-                                    <td>${exercices.exercice}</td>
-                                    <td>${exercices.serie}</td>
-                                    <td>${exercices.repetitions}</td>
-                                    <td>${exercices.repos} s</td>
+                                    <td>${bottomBodyMonday.muscle}</td>
+                                    <td>${bottomBodyMonday.exercice}</td>
+                                    <td>${bottomBodyMonday.serie}</td>
+                                    <td>${bottomBodyMonday.repetitions}</td>
+                                    <td>${bottomBodyMonday.repos} s</td>
                                 </tr>
                             </c:forEach>
                             </tbody>
@@ -294,7 +294,7 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <c:forEach items="${sessionScope.topBodyTuesday}" var="exercices">
+                            <c:forEach items="${sessionScope.topBodyWednesday}" var="exercices">
                                 <tr>
                                     <td>${exercices.muscle}</td>
                                     <td>${exercices.exercice}</td>
@@ -325,7 +325,7 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <c:forEach items="${sessionScope.bottomBodyTuesday}" var="exercices">
+                            <c:forEach items="${sessionScope.bottomBodyWednesday}" var="exercices">
                                 <tr>
                                     <td>${exercices.muscle}</td>
                                     <td>${exercices.exercice}</td>
@@ -381,7 +381,7 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <c:forEach items="${sessionScope.topBodyTuesday}" var="exercices">
+                            <c:forEach items="${sessionScope.topBodyThursday}" var="exercices">
                                 <tr>
                                     <td>${exercices.muscle}</td>
                                     <td>${exercices.exercice}</td>
@@ -412,7 +412,7 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <c:forEach items="${sessionScope.bottomBodyTuesday}" var="exercices">
+                            <c:forEach items="${sessionScope.bottomBodyThursday}" var="exercices">
                                 <tr>
                                     <td>${exercices.muscle}</td>
                                     <td>${exercices.exercice}</td>
@@ -468,7 +468,7 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <c:forEach items="${sessionScope.topBodyTuesday}" var="exercices">
+                            <c:forEach items="${sessionScope.topBodyFriday}" var="exercices">
                                 <tr>
                                     <td>${exercices.muscle}</td>
                                     <td>${exercices.exercice}</td>
@@ -499,7 +499,7 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <c:forEach items="${sessionScope.bottomBodyTuesday}" var="exercices">
+                            <c:forEach items="${sessionScope.bottomBodyFriday}" var="exercices">
                                 <tr>
                                     <td>${exercices.muscle}</td>
                                     <td>${exercices.exercice}</td>
@@ -555,7 +555,7 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <c:forEach items="${sessionScope.topBodyTuesday}" var="exercices">
+                            <c:forEach items="${sessionScope.topBodySaturday}" var="exercices">
                                 <tr>
                                     <td>${exercices.muscle}</td>
                                     <td>${exercices.exercice}</td>
@@ -586,7 +586,7 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <c:forEach items="${sessionScope.bottomBodyTuesday}" var="exercices">
+                            <c:forEach items="${sessionScope.bottomBodySaturday}" var="exercices">
                                 <tr>
                                     <td>${exercices.muscle}</td>
                                     <td>${exercices.exercice}</td>
@@ -642,7 +642,7 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <c:forEach items="${sessionScope.topBodyTuesday}" var="exercices">
+                            <c:forEach items="${sessionScope.topBodySunday}" var="exercices">
                                 <tr>
                                     <td>${exercices.muscle}</td>
                                     <td>${exercices.exercice}</td>
@@ -673,7 +673,7 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <c:forEach items="${sessionScope.bottomBodyTuesday}" var="exercices">
+                            <c:forEach items="${sessionScope.bottomBodySunday}" var="exercices">
                                 <tr>
                                     <td>${exercices.muscle}</td>
                                     <td>${exercices.exercice}</td>
@@ -699,81 +699,166 @@
     </div>
 </div>
 
-
 <!--show blocMonday -->
 <script>
     function showBloc1() {
-        var x = document.getElementById("card1");
-        if (x.style.display === "none") {
-            x.style.display = "block";
+        var a = document.getElementById("card1");
+        var b = document.getElementById("card2");
+        var c = document.getElementById("card3");
+        var d = document.getElementById("card4");
+        var e = document.getElementById("card5");
+        var f = document.getElementById("card6");
+        var g = document.getElementById("card7");
+        if (a.style.display === "none") {
+            a.style.display = "block";
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "none";
+            e.style.display = "none";
+            f.style.display = "none";
+            g.style.display = "none";
         } else {
-            x.style.display = "none";
+            a.style.display = "none";
         }
     }
 </script>
+
 <!--show blocTuesday -->
 <script>
     function showBloc2() {
-        var x = document.getElementById("card2");
-        if (x.style.display === "none") {
-            x.style.display = "block";
+        var a = document.getElementById("card2");
+        var b = document.getElementById("card1");
+        var c = document.getElementById("card3");
+        var d = document.getElementById("card4");
+        var e = document.getElementById("card5");
+        var f = document.getElementById("card6");
+        var g = document.getElementById("card7");
+        if (a.style.display === "none") {
+            a.style.display = "block";
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "none";
+            e.style.display = "none";
+            f.style.display = "none";
+            g.style.display = "none";
         } else {
-            x.style.display = "none";
+            a.style.display = "none";
         }
+
     }
 </script>
 <!--show blocWednesday -->
 <script>
     function showBloc3() {
-        var x = document.getElementById("card3");
-        if (x.style.display === "none") {
-            x.style.display = "block";
+        var a = document.getElementById("card3");
+        var b = document.getElementById("card1");
+        var c = document.getElementById("card2");
+        var d = document.getElementById("card4");
+        var e = document.getElementById("card5");
+        var f = document.getElementById("card6");
+        var g = document.getElementById("card7");
+        if (a.style.display === "none") {
+            a.style.display = "block";
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "none";
+            e.style.display = "none";
+            f.style.display = "none";
+            g.style.display = "none";
         } else {
-            x.style.display = "none";
+            a.style.display = "none";
         }
     }
 </script>
 <!--show blocThursday -->
 <script>
     function showBloc4() {
-        var x = document.getElementById("card4");
-        if (x.style.display === "none") {
-            x.style.display = "block";
+        var a = document.getElementById("card4");
+        var b = document.getElementById("card1");
+        var c = document.getElementById("card2");
+        var d = document.getElementById("card3");
+        var e = document.getElementById("card5");
+        var f = document.getElementById("card6");
+        var g = document.getElementById("card7");
+        if (a.style.display === "none") {
+            a.style.display = "block";
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "none";
+            e.style.display = "none";
+            f.style.display = "none";
+            g.style.display = "none";
         } else {
-            x.style.display = "none";
+            a.style.display = "none";
         }
     }
 </script>
 <!--show blocFriday -->
 <script>
     function showBloc5() {
-        var x = document.getElementById("card5");
-        if (x.style.display === "none") {
-            x.style.display = "block";
+        var a = document.getElementById("card5");
+        var b = document.getElementById("card1");
+        var c = document.getElementById("card2");
+        var d = document.getElementById("card3");
+        var e = document.getElementById("card4");
+        var f = document.getElementById("card6");
+        var g = document.getElementById("card7");
+        if (a.style.display === "none") {
+            a.style.display = "block";
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "none";
+            e.style.display = "none";
+            f.style.display = "none";
+            g.style.display = "none";
         } else {
-            x.style.display = "none";
+            a.style.display = "none";
         }
     }
 </script>
 <!--show blocSaturday -->
 <script>
     function showBloc6() {
-        var x = document.getElementById("card6");
-        if (x.style.display === "none") {
-            x.style.display = "block";
+        var a = document.getElementById("card6");
+        var b = document.getElementById("card1");
+        var c = document.getElementById("card2");
+        var d = document.getElementById("card3");
+        var e = document.getElementById("card4");
+        var f = document.getElementById("card5");
+        var g = document.getElementById("card7");
+        if (a.style.display === "none") {
+            a.style.display = "block";
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "none";
+            e.style.display = "none";
+            f.style.display = "none";
+            g.style.display = "none";
         } else {
-            x.style.display = "none";
+            a.style.display = "none";
         }
     }
 </script>
 <!--show blocSunday -->
 <script>
     function showBloc7() {
-        var x = document.getElementById("card7");
-        if (x.style.display === "none") {
-            x.style.display = "block";
+        var a = document.getElementById("card7");
+        var b = document.getElementById("card1");
+        var c = document.getElementById("card2");
+        var d = document.getElementById("card3");
+        var e = document.getElementById("card4");
+        var f = document.getElementById("card5");
+        var g = document.getElementById("card6");
+        if (a.style.display === "none") {
+            a.style.display = "block";
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "none";
+            e.style.display = "none";
+            f.style.display = "none";
+            g.style.display = "none";
         } else {
-            x.style.display = "none";
+            a.style.display = "none";
         }
     }
 </script>

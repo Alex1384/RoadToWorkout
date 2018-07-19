@@ -134,14 +134,6 @@ public class ProgrammeServlet extends HttpServlet {
 
                 }
 
-                /*
-                if (idMusclularGroup  == 1) {
-                    topBody.add(objectifModel);
-                } else {
-                    bottomBody.add(objectifModel);
-                }
-                */
-
                 request.getSession().setAttribute("nameObjectif", nameObjectif);
 
             }
