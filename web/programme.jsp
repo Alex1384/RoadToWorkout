@@ -102,11 +102,9 @@
             </ol>
 
             <div class="carousel-inner">
-
                 <div class="carousel-item active">
                     <div class="container">
                         <h3>${sessionScope.muscularGroupTopMonday}</h3>
-
                     </div>
 
                     <div style="overflow-x:auto;">
@@ -166,6 +164,7 @@
                     </div>
                 </div>
             </div>
+
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>

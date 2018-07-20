@@ -9,6 +9,14 @@ body{
     background-size: cover;
 }
 
+tr{
+    color: white;
+}
+
+table {
+    margin-top: 5px;
+}
+
 #calendar{
     margin-left: 100%;
     margin-top: -7%;
@@ -435,4 +443,12 @@ body{
     border-radius: 100px;
 }
 
+
+/*---------------------------- chevron slide --------------------------------*/
+.carousel-control-prev{
+    margin-top: 25%;
+}
+.carousel-control-next{
+    margin-top: 25%;
+}
 
