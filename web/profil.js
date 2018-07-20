@@ -3,6 +3,8 @@ $(document).ready(function() {
     var panelsButton = $('.dropdown-user');
     panels.hide();
 
+
+
     //Click dropdown
     panelsButton.click(function() {
         //get data-for attribute
@@ -23,6 +25,8 @@ $(document).ready(function() {
             }
         })
     });
+
+
 
 
     $('[data-toggle="tooltip"]').tooltip();

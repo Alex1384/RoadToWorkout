@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <title>Title</title>
@@ -26,7 +27,7 @@
                      alt="User Pic">
             </div>
             <div class="col-xs-8 col-sm-9 col-md-10 col-lg-10">
-                <strong>Name</strong><br>
+                <strong>${requestScope.name}</strong><br>
                 <span class="text-muted">Entrainements fait: 1</span>
             </div>
             <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 dropdown-user" data-for=".cyruxx">
@@ -53,7 +54,7 @@
                             </div>
 
                             <div class=" col-md-9 col-lg-9">
-                                <strong>Name</strong><br>
+                                <strong>${requestScope.name}</strong><br>
                                 <table class="table table-user-information">
                                     <tbody>
                                     <tr>
@@ -74,11 +75,21 @@
                                     </tr>
                                     </tbody>
                                 </table>
+                                <h3>Ajouter un poids: </h3>
                             </div>
                         </div>
-                    </div>
-                    <div class="panel-footer">
+                        <div class="panel-body">
+                            <form action="">
+                                <label for="date">Date: </label>
+                                <input type="date" id="date"><br>
+                                <label for="poids">Poids: </label>
+                                <input type="text" id="poids"><br><br><br>
+                                <input type="submit" value="Submit">
+                            </form>
+                        </div>
+                        <div class="panel-footer">
 
+                        </div>
                     </div>
                 </div>
             </div>
