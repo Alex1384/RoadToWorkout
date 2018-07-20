@@ -62,7 +62,7 @@ table {
     height: 50px;
     border-radius: 5%;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 #calendar2:hover{
@@ -102,7 +102,7 @@ table {
     color: #fff;
     border-radius: 5%;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 #calendar3:hover{
@@ -140,7 +140,7 @@ table {
     color: #fff;
     border-radius: 5%;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 #calendar4:hover{
@@ -178,7 +178,7 @@ table {
     color: #fff;
     border-radius: 5%;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 #calendar5:hover{
@@ -217,7 +217,7 @@ table {
     color: #fff;
     border-radius: 5%;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 #calendar6:hover{
@@ -255,7 +255,7 @@ table {
     color: #fff;
     border-radius: 5%;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 #calendar7:hover{
@@ -293,7 +293,7 @@ table {
     color: #fff;
     border-radius: 5%;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 #calendar8:hover{
@@ -344,8 +344,6 @@ table {
     margin : auto;
 }
 
-
-
 /*------------------------- slideshow  ------------------------ */
 .carousel{
     background: #2f4357;
@@ -356,18 +354,13 @@ table {
 
 /*---------------- text objectif --------------*/
 .banner {
-    color: white;
     text-align: center;
-    background-size: cover;
     height: 10vh;
     margin-left: -90%;
 }
 
-.banner_btn{
-    color: white;
-}
 .banner a{
-    background-color: #2f4357;
+    background-color: white;
 
 }
 
@@ -377,14 +370,17 @@ table {
 }
 
 .banner a p{
-    background-color: #2f4357;
-    opacity: 1;
-    filter: alpha(opacity=100); /* For IE8 and earlier */
-    width: 300px;
+    font-size: 20px;
+    width: 900px;
     padding: 0.75em 0;
     margin-left: auto;
     margin-right: auto;
     border-radius: 100px;
+    background: -webkit-linear-gradient(to right, #333399 0%, #ff00cc 100%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399 0%, #ff00cc 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
 }
 
 
