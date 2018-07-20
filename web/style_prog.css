@@ -1,0 +1,427 @@
+
+/*================ BODY ============================ */
+body{
+    margin: auto;
+    /*background: url(https://images.pexels.com/photos/3797/black-and-white-sport-fight-boxer.jpg?cs=srgb&dl=black-wallpaper-black-and-white-boxer-3797.jpg&fm=jpg) no-repeat;
+    */
+    width: 100%;
+    background: url(https://images.pexels.com/photos/791763/pexels-photo-791763.jpeg?cs=srgb&dl=barbell-black-and-white-black-and-white-791763.jpg&fm=jpg) no-repeat;
+    background-size: cover;
+}
+
+tr{
+    color: white;
+}
+
+table {
+    margin-top: 5px;
+}
+
+#calendar{
+    margin-left: 100%;
+    margin-top: -7%;
+    width: 130px;
+    height: auto;
+    background: #e52d27;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #b31217, #e52d27);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #b31217, #e52d27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border-radius: 5%;
+    box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
+    border: 3px solid white;
+    text-align: center;
+}
+#calendar>p {
+    font-family: Verdana, Arial, sans-serif;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+#calendar-day {
+    font-size:  16px;
+}
+
+#calendar-month-year {
+    font-size: 16px;
+}
+
+#calendar-date{
+    font-size: 16px;
+}
+
+/* calendar 2 à 8 */
+#calendar2-8{
+    text-align: center;
+}
+
+/*date2*/
+#calendar2 {
+    display: inline-block;
+    width: auto;
+    height: 50px;
+    border-radius: 5%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#calendar2:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+    font-weight: bold;
+}
+
+#calendar2:target{
+    border: 1px solid white;
+}
+
+#calendar2>p {
+    font-family: Verdana, Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+#calendar-day2 {
+    font-size:  30px;
+    padding-left : 5px;
+    padding-right : 5px;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(to right, #333399 0%, #ff00cc 100%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399 0%, #ff00cc 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*date3*/
+#calendar3 {
+    margin: 10px;
+    display: inline-block;
+    width: auto;
+    height: 50px;
+    color: #fff;
+    border-radius: 5%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#calendar3:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+    font-weight: bold;
+}
+
+#calendar3>p {
+    font-family: Verdana, Arial, sans-serif;
+    padding: 10px 0;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+#calendar-day3 {
+    font-size:  30px;
+    padding-left: 5px;
+    padding-right : 5px;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(to right, #333399 0%, #ff00cc 100%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399 0%, #ff00cc 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*date4*/
+#calendar4 {
+    margin: 10px;
+    display: inline-block;
+    width: auto;
+    height: 50px;
+    color: #fff;
+    border-radius: 5%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#calendar4:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+    font-weight: bold;
+}
+
+#calendar4>p {
+    font-family: Verdana, Arial, sans-serif;
+    padding: 10px 0;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+#calendar-day4 {
+    font-size:  30px;
+    padding-left : 5px;
+    padding-right: 5px;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(to right, #333399 0%, #ff00cc 100%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399 0%, #ff00cc 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*date5*/
+#calendar5 {
+    margin: 10px;
+    display: inline-block;
+    width: auto;
+    height: 50px;
+    color: #fff;
+    border-radius: 5%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#calendar5:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+    font-weight: bold;
+}
+
+#calendar5>p {
+    font-family: Verdana, Arial, sans-serif;
+    padding: 10px 0;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+#calendar-day5 {
+    font-size:  30px;
+    padding-left : 5px;
+    padding-right : 5px;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(to right, #333399 0%, #ff00cc 100%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399 0%, #ff00cc 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*date6*/
+
+#calendar6 {
+    margin: 10px;
+    display: inline-block;
+    width: auto;
+    height: 50px;
+    color: #fff;
+    border-radius: 5%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#calendar6:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+    font-weight: bold;
+}
+
+#calendar6>p {
+    font-family: Verdana, Arial, sans-serif;
+    padding: 10px 0;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+#calendar-day6 {
+    font-size:  30px;
+    padding-left : 5px;
+    padding-right : 5px;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(to right, #333399 0%, #ff00cc 100%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399 0%, #ff00cc 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*date7*/
+#calendar7 {
+    margin: 10px;
+    display: inline-block;
+    width: auto;
+    height: 50px;
+    color: #fff;
+    border-radius: 5%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#calendar7:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+    font-weight: bold;
+}
+
+#calendar7>p {
+    font-family: Verdana, Arial, sans-serif;
+    padding: 10px 0;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+#calendar-day7 {
+    font-size:  30px;
+    padding-left : 5px;
+    padding-right : 5px;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(to right, #333399 0%, #ff00cc 100%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399 0%, #ff00cc 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*date8*/
+#calendar8 {
+    margin: 10px;
+    width: auto;
+    display: inline-block;
+    height: 50px;
+    color: #fff;
+    border-radius: 5%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#calendar8:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+    font-weight: bold;
+}
+
+#calendar8>p {
+    font-family: Verdana, Arial, sans-serif;
+    padding: 10px 0;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+#calendar-day8 {
+    font-size:  30px;
+    padding-left : 5px;
+    padding-right: 5px;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(to right, #333399 0%, #ff00cc 100%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399 0%, #ff00cc 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*------------------------ card ----------------------------------*/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 45%;
+    text-align: center;
+    margin: auto;
+    margin-top : 2.5%;
+}
+
+.card:hover {
+    box-shadow: 0 50px 50px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+#img1{
+    margin : auto;
+}
+
+/*------------------------- slideshow  ------------------------ */
+.carousel{
+    background: #2f4357;
+    margin-top: 20px;
+    color: white;
+    height: 200px;
+}
+
+/*---------------- text objectif --------------*/
+.banner {
+    text-align: center;
+    height: 10vh;
+    margin-left: -90%;
+}
+
+.banner a{
+    background-color: white;
+
+}
+
+.banner a p:hover{
+    font-weight: bold;
+
+}
+
+.banner a p{
+    font-size: 20px;
+    width: 900px;
+    padding: 0.75em 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+    background: -webkit-linear-gradient(to right, #333399 0%, #ff00cc 100%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399 0%, #ff00cc 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+/* Style partie connection et des boutons connections */
+.btn, form {
+    font: 1rem 'Fira Sans', sans-serif;
+    padding: .5rem;
+    background: rgba(94, 99, 110, 0.55);
+    color:white;
+    border: none;
+    border-radius: 4px;
+    margin: auto;
+    display: block;
+    width:450px;
+}
+.btn :hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.container-btn {
+    text-align: center;
+    margin-top: 10%;
+    padding: auto;
+    display: block;
+}
+a {
+    text-decoration: none;
+}
+
+h1{
+    font-size:1rem;
+    text-align: center;
+    font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+    color: white;
+
+}
+
+/*---------------------------- chevron slide --------------------------------*/
+.carousel-control-prev{
+    margin-top: 25%;
+}
+.carousel-control-next{
+    margin-top: 25%;
+}
+
