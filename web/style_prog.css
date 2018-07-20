@@ -50,16 +50,19 @@ table {
     font-size: 16px;
 }
 
-/*date2*/
+/* calendar 2 à 8 */
+#calendar2-8{
+    text-align: center;
+}
 
+/*date2*/
 #calendar2 {
-    margin-left: 12.5%;
     display: inline-block;
-    width: 100px;
-    height: 75px;
-    color: #fff;
+    width: auto;
+    height: 50px;
     border-radius: 5%;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 #calendar2:hover{
@@ -81,38 +84,25 @@ table {
 
 #calendar-day2 {
     font-size:  30px;
-    padding-left: 5px;
+    padding-left : 5px;
+    padding-right : 5px;
     text-transform: uppercase;
-    background: -webkit-linear-gradient(to right, #30CFD0 0%, #330867 100%);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #30CFD0 0%, #330867 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #333399 0%, #ff00cc 100%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399 0%, #ff00cc 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-#calendar-month-year2 {
-    font-size: 14px;
-}
-
-#calendar-date2{
-    font-size: 64px;
-    padding-top: 10px;
-    padding-bottom: 0;
-}
-
 /*date3*/
-
 #calendar3 {
     margin: 10px;
     display: inline-block;
-    width: 100px;
-    height: 75px;
-    background: #ff00cc;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: auto;
+    height: 50px;
     color: #fff;
     border-radius: 5%;
-    box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 #calendar3:hover{
@@ -131,34 +121,26 @@ table {
 }
 
 #calendar-day3 {
-    font-size:  16px;
-    padding-top: 20px;
-}
-
-#calendar-month-year3 {
-    font-size: 14px;
-}
-
-#calendar-date3{
-    font-size: 64px;
-    padding-top: 10px;
-    padding-bottom: 0;
+    font-size:  30px;
+    padding-left: 5px;
+    padding-right : 5px;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(to right, #333399 0%, #ff00cc 100%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399 0%, #ff00cc 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /*date4*/
-
 #calendar4 {
     margin: 10px;
     display: inline-block;
-    width: 100px;
-    height: 75px;
-    background: #ff00cc;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: auto;
+    height: 50px;
     color: #fff;
     border-radius: 5%;
-    box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 #calendar4:hover{
@@ -177,34 +159,26 @@ table {
 }
 
 #calendar-day4 {
-    font-size:  16px;
-    padding-top: 20px;
-}
-
-#calendar-month-year4 {
-    font-size: 14px;
-}
-
-#calendar-date4 {
-    font-size: 64px;
-    padding-top: 10px;
-    padding-bottom: 0;
+    font-size:  30px;
+    padding-left : 5px;
+    padding-right: 5px;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(to right, #333399 0%, #ff00cc 100%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399 0%, #ff00cc 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /*date5*/
-
 #calendar5 {
     margin: 10px;
     display: inline-block;
-    width: 100px;
-    height: 75px;
-    background: #ff00cc;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: auto;
+    height: 50px;
     color: #fff;
     border-radius: 5%;
-    box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 #calendar5:hover{
@@ -223,18 +197,14 @@ table {
 }
 
 #calendar-day5 {
-    font-size:  16px;
-    padding-top: 20px;
-}
-
-#calendar-month-year5 {
-    font-size: 14px;
-}
-
-#calendar-date5 {
-    font-size: 64px;
-    padding-top: 10px;
-    padding-bottom: 0;
+    font-size:  30px;
+    padding-left : 5px;
+    padding-right : 5px;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(to right, #333399 0%, #ff00cc 100%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399 0%, #ff00cc 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /*date6*/
@@ -242,15 +212,12 @@ table {
 #calendar6 {
     margin: 10px;
     display: inline-block;
-    width: 100px;
-    height: 75px;
-    background: #ff00cc;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: auto;
+    height: 50px;
     color: #fff;
     border-radius: 5%;
-    box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 #calendar6:hover{
@@ -269,34 +236,26 @@ table {
 }
 
 #calendar-day6 {
-    font-size:  16px;
-    padding-top: 20px;
-}
-
-#calendar-month-year6 {
-    font-size: 14px;
-}
-
-#calendar-date6 {
-    font-size: 64px;
-    padding-top: 10px;
-    padding-bottom: 0;
+    font-size:  30px;
+    padding-left : 5px;
+    padding-right : 5px;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(to right, #333399 0%, #ff00cc 100%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399 0%, #ff00cc 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /*date7*/
-
 #calendar7 {
     margin: 10px;
     display: inline-block;
-    width: 100px;
-    height: 75px;
-    background: #ff00cc;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: auto;
+    height: 50px;
     color: #fff;
     border-radius: 5%;
-    box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 #calendar7:hover{
@@ -315,34 +274,26 @@ table {
 }
 
 #calendar-day7 {
-    font-size:  16px;
-    padding-top: 20px;
-}
-
-#calendar-month-year7 {
-    font-size: 14px;
-}
-
-#calendar-date7 {
-    font-size: 64px;
-    padding-top: 10px;
-    padding-bottom: 0;
+    font-size:  30px;
+    padding-left : 5px;
+    padding-right : 5px;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(to right, #333399 0%, #ff00cc 100%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399 0%, #ff00cc 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /*date8*/
-
 #calendar8 {
     margin: 10px;
+    width: auto;
     display: inline-block;
-    width: 100px;
-    height: 75px;
-    background: #ff00cc;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 50px;
     color: #fff;
     border-radius: 5%;
-    box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 #calendar8:hover{
@@ -361,22 +312,14 @@ table {
 }
 
 #calendar-day8 {
-    font-size:  16px;
-    padding-top: 20px;
-}
-#calendar8:active{
-    opacity: 0.5;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
-}
-
-#calendar-month-year8 {
-    font-size: 14px;
-}
-
-#calendar-date8 {
-    font-size: 64px;
-    padding-top: 10px;
-    padding-bottom: 0;
+    font-size:  30px;
+    padding-left : 5px;
+    padding-right: 5px;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(to right, #333399 0%, #ff00cc 100%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399 0%, #ff00cc 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /*------------------------ card ----------------------------------*/

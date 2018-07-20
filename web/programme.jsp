@@ -46,47 +46,33 @@
     </div>
 </div>
 
-<div class="container">
+<div id="calendar2-8">
     <div id="calendar2" onclick="showBloc1()">
         <p id="calendar-day2"></p>
-        <p id="calendar-date2"></p>
-        <p id="calendar-month-year2"></p>
     </div>
 
     <div id="calendar3" onclick="showBloc2()">
         <p id="calendar-day3"></p>
-        <p id="calendar-date3"></p>
-        <p id="calendar-month-year3"></p>
     </div>
 
     <div id="calendar4" onclick="showBloc3()">
         <p id="calendar-day4"></p>
-        <p id="calendar-date4"></p>
-        <p id="calendar-month-year4"></p>
     </div>
 
     <div id="calendar5" onclick="showBloc4()">
         <p id="calendar-day5"></p>
-        <p id="calendar-date5"></p>
-        <p id="calendar-month-year5"></p>
     </div>
 
     <div id="calendar6" onclick="showBloc5()">
         <p id="calendar-day6"></p>
-        <p id="calendar-date6"></p>
-        <p id="calendar-month-year6"></p>
     </div>
 
     <div id="calendar7" onclick="showBloc6()">
         <p id="calendar-day7"></p>
-        <p id="calendar-date7"></p>
-        <p id="calendar-month-year7"></p>
     </div>
 
     <div id="calendar8" onclick="showBloc7()">
         <p id="calendar-day8"></p>
-        <p id="calendar-date8"></p>
-        <p id="calendar-month-year8"></p>
     </div>
 </div>
 
