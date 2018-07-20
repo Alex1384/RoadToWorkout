@@ -84,6 +84,7 @@ public class ProgrammeServlet extends HttpServlet {
                     if (nameMuscularGroup.equals("Repos")){
                         request.getSession().setAttribute("muscularGroupTopMonday", nameMuscularGroup);
                         request.getSession().setAttribute("muscularGroupBottomMonday", nameMuscularGroup);
+
                     } else {
                         if (idMusclularGroup  == 1) {
                             topBodyMonday.add(objectifModel);
