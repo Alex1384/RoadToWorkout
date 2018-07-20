@@ -57,12 +57,8 @@ table {
     display: inline-block;
     width: 100px;
     height: 75px;
-    background: #ff00cc;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
     border-radius: 5%;
-    box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
     text-align: center;
 }
 
@@ -84,8 +80,13 @@ table {
 }
 
 #calendar-day2 {
-    font-size:  16px;
-    padding-top: 20px;
+    font-size:  30px;
+    padding-left: 5px;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(to right, #30CFD0 0%, #330867 100%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #30CFD0 0%, #330867 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #calendar-month-year2 {
