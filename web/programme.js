@@ -29,6 +29,99 @@ function setText(id, val) {
 window.onload = calendar;
 
 
+//********************************* click on calendar one *******************//
+
+function showProgrammeOnDay() {
+    var x = document.getElementById("calendar-day").textContent;
+    var a = document.getElementById("card1");
+    var b = document.getElementById("card2");
+    var c = document.getElementById("card3");
+    var d = document.getElementById("card4");
+    var e = document.getElementById("card5");
+    var f = document.getElementById("card6");
+    var g = document.getElementById("card7");
+
+    var textMonday = "Lundi";
+    var textTuesday = "Mardi";
+    var textWednesday = "Mercredi";
+    var textThursday = "Jeudi";
+    var textFriday = "Vendredi";
+    var textSaturday = "Samedi";
+    var textSunday = "Dimanche";
+
+    if (x === textMonday){
+        a.style.display = "block";
+        b.style.display = "none";
+        c.style.display = "none";
+        d.style.display = "none";
+        e.style.display = "none";
+        f.style.display = "none";
+        g.style.display = "none";
+
+    }
+    else if (x === textTuesday) {
+        b.style.display = "block";
+        a.style.display = "none";
+        c.style.display = "none";
+        d.style.display = "none";
+        e.style.display = "none";
+        f.style.display = "none";
+        g.style.display = "none";
+
+    }
+    else if (x === textWednesday) {
+        c.style.display = "block";
+        a.style.display = "none";
+        b.style.display = "none";
+        d.style.display = "none";
+        e.style.display = "none";
+        f.style.display = "none";
+        g.style.display = "none";
+
+    }
+    else if (x === textThursday) {
+        d.style.display = "block";
+        a.style.display = "none";
+        b.style.display = "none";
+        c.style.display = "none";
+        e.style.display = "none";
+        f.style.display = "none";
+        g.style.display = "none";
+
+    }
+    else if (x === textFriday) {
+        e.style.display = "block";
+        a.style.display = "none";
+        b.style.display = "none";
+        c.style.display = "none";
+        d.style.display = "none";
+        f.style.display = "none";
+        g.style.display = "none";
+
+    }
+    else if (x === textSaturday) {
+        f.style.display = "block";
+        a.style.display = "none";
+        b.style.display = "none";
+        c.style.display = "none";
+        d.style.display = "none";
+        e.style.display = "none";
+        g.style.display = "none";
+
+
+    }
+    else if (x === textSunday) {
+        g.style.display = "block";
+        a.style.display = "none";
+        b.style.display = "none";
+        c.style.display = "none";
+        d.style.display = "none";
+        e.style.display = "none";
+        f.style.display = "none";
+
+    }
+}
+
 
 
 
