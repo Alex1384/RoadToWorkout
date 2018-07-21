@@ -18,19 +18,30 @@ table {
 }
 
 #calendar{
-    margin-left: 100%;
-    margin-top: -7%;
     width: 130px;
     height: auto;
-    background: #e52d27;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #b31217, #e52d27);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #b31217, #e52d27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: #fff;
     border-radius: 5%;
     box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
     border: 3px solid white;
     text-align: center;
+    background: #536976;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    position: fixed;
+    right: 0;
+    top : 0;
+    margin-right: 10px;
+    margin-top: 10px;
 }
+
+#calendar:hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.2);
+    font-weight: bold;
+}
+
 #calendar>p {
     font-family: Verdana, Arial, sans-serif;
     margin: 0;
@@ -39,6 +50,7 @@ table {
 }
 
 #calendar-day {
+    margin-top: 5px;
     font-size:  16px;
 }
 
