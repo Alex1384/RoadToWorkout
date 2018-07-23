@@ -7,15 +7,10 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<html>
-<head>
-    <title>Title</title>
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
     <script type="text/javascript" src="profil.js"></script>
-</head>
-<body>
+
 
 <br><br>
 <div class="container">
@@ -27,7 +22,7 @@
                      alt="User Pic">
             </div>
             <div class="col-xs-8 col-sm-9 col-md-10 col-lg-10">
-                <strong>${requestScope.name}</strong><br>
+                <strong class="profil">${requestScope.name}</strong><br>
                 <span class="text-muted">Entrainements fait: 1</span>
             </div>
             <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 dropdown-user" data-for=".cyruxx">
@@ -54,24 +49,24 @@
                             </div>
 
                             <div class=" col-md-9 col-lg-9">
-                                <strong>${requestScope.name}</strong><br>
+                                <strong class="profil">${requestScope.name}</strong><br>
                                 <table class="table table-user-information">
                                     <tbody>
                                     <tr>
-                                        <td>Poids</td>
-                                        <td>90 kg</td>
+                                        <td class="profil">Poids</td>
+                                        <td class="profil">90 kg</td>
                                     </tr>
                                     <tr>
-                                        <td>Taille</td>
-                                        <td>190 cm</td>
+                                        <td class="profil">Taille</td>
+                                        <td class="profil">190 cm</td>
                                     </tr>
                                     <tr>
-                                        <td>Genre</td>
-                                        <td>Homme</td>
+                                        <td class="profil">Genre</td>
+                                        <td class="profil">Homme</td>
                                     </tr>
                                     <tr>
-                                        <td>Entrainements faits</td>
-                                        <td>1</td>
+                                        <td class="profil">Entrainements faits</td>
+                                        <td class="profil">1</td>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -98,7 +93,4 @@
     </div>
 </div>
 
-</body>
 
-
-</html>

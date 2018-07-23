@@ -14,6 +14,8 @@
     <title>Programme</title>
     <script type="text/javascript" src="${pageContext.request.contextPath}/programme.js"></script>
     <link rel="stylesheet" type="text/css" href="style_prog.css">
+    <script type="text/javascript" src="profil.js"></script>
+
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -33,6 +35,11 @@
 <body>
 <div id="back"></div>
 
+
+    <div class="container">
+        <jsp:include page="/profil.jsp"></jsp:include>
+
+    </div>
 <div class="container">
     <div class="banner">
         <a class="banner_btn"><p>Mon objectif : ${sessionScope.nameObjectif}</p></a>

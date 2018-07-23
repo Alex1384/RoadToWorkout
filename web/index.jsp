@@ -1,1 +1,1 @@
-<jsp:forward page = "/profil"/>
+<jsp:forward page = "/programme"/>

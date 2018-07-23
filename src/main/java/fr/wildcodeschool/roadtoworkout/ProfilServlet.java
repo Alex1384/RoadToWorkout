@@ -18,30 +18,30 @@ public class ProfilServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        Class driverClass = null;
+        Class driverClassProfil = null;
         try {
-            driverClass = Class.forName("com.mysql.jdbc.Driver");
-            Driver driver = (Driver) driverClass.newInstance();
+            driverClassProfil = Class.forName("com.mysql.jdbc.Driver");
+            Driver driverProfil = (Driver) driverClassProfil.newInstance();
 
-            DriverManager.registerDriver(driver);
+            DriverManager.registerDriver(driverProfil);
 
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/RoadToWorkOut", "root", "jecode4wcs");
-            PreparedStatement preparedStatement = connection
+            Connection connectionProfil = DriverManager.getConnection("jdbc:mysql://localhost:3306/RoadToWorkOut", "root", "jecode4wcs");
+            PreparedStatement preparedStatementProfil = connectionProfil
                     .prepareStatement("SELECT * FROM user where id_user  = ?");
-            preparedStatement.setInt(1, 1 );
+            preparedStatementProfil.setInt(1, 1 );
 
 
-            PreparedStatement preparedStatementweigth = connection
+            PreparedStatement preparedStatementweigth = connectionProfil
                     .prepareStatement("SELECT * FROM weigth where  = ?");
-            preparedStatement.setInt(1, 1 );
-            ResultSet resultSet = preparedStatement.executeQuery();
-            while (resultSet.next()) {
+            preparedStatementProfil.setInt(1, 1 );
+            ResultSet resultSetProfil = preparedStatementProfil.executeQuery();
+            while (resultSetProfil.next()) {
                 //TODO : charger le UserModel
-                String userName = resultSet.getString("user_name");
+                String userName = resultSetProfil.getString("user_name");
                 request.setAttribute("name", userName);
             }
 
-            ResultSet resultSetWeigth = preparedStatement.executeQuery();
+            ResultSet resultSetWeigth = preparedStatementProfil.executeQuery();
             while (resultSetWeigth.next()) {
                 //TODO : charger le UserModel
             }
