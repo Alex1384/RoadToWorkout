@@ -1,1 +1,3 @@
-<jsp:forward page = "/programme"/>
+
+<jsp:forward page="/formulaire" />
+

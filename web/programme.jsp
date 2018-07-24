@@ -70,8 +70,7 @@
         <a class="banner_btn"><p>Mon objectif : ${sessionScope.nameObjectif}</p></a>
     </div>
 
-
-    <div id="calendar">
+    <div id="calendar" onclick="showProgrammeOnDay()">
         <p id="calendar-day"></p>
         <p id="calendar-date"></p>
         <p id="calendar-month-year"></p>
