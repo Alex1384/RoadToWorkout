@@ -1,8 +1,28 @@
-form-group {
+
+
+
+body {
+    padding-top: 140px;
+    background: url("/images/femme-running.jpg") no-repeat;
+
+}
+p{
+    text-align: center;
+    padding-top: 70px;
+    color: blue;
+    font-size: 1.5em;
+}
+
+.form-group {
+    padding: 10px;
     text-align: center;
 
 }
-
-h2 {
+button{
     text-align: center;
+    padding: 3px;
+}
+
+.group{
+    padding-top: 50px;
 }

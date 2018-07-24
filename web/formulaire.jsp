@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
     <title>Title</title>
@@ -23,19 +24,28 @@
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
           integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="formulaire.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/formulaire.css">
 </head>
 
 
 <body>
 
-<h2>Générez votre programme</h2>
-<form action="/action_page.php">
+
+
+<form method="post" action="${pageContext.request.contextPath}/formulaire">
     <div class="form-group">
         <div class="row">
             <div class="offset-sm-4 col-sm-4">
-                <label for="exampleFormControlSelect1"></label>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <input type="firstName" class="form-control" id="firstNameId" placeholder="Entrer votre nom"
+                       name="name">
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="row">
+            <div class="offset-sm-4 col-sm-4">
+                <select class="form-control" id="exampleFormControlSelect1" name="sexe">
                     <option>Choisissez votre sexe</option>
                     <option>Homme</option>
                     <option>Femme</option>
@@ -43,51 +53,51 @@
             </div>
         </div>
     </div>
-    <form class="form-horizontal" action="/action_page.php">
-        <div class="form-group">
-            <div class="row">
-                <div class="offset-sm-4 col-sm-4">
-                    <input type="Age" class="form-control" id="age" placeholder="Entrer votre Age" name="age">
-                </div>
+    <div class="form-group">
+        <div class="row">
+            <div class="offset-sm-4 col-sm-4">
+                <input type="Age" class="form-control" id="ageId" placeholder="Entrer votre Age" name="age">
             </div>
         </div>
-        <div class="form-group">
-            <div class="row">
-                <div class="offset-sm-4 col-sm-4">
-                    <input type="poids" class="form-control" id="poids" placeholder="Entrer votre poids" name="poids">
-                </div>
+    </div>
+    <div class="form-group">
+        <div class="row">
+            <div class="offset-sm-4 col-sm-4">
+                <input type="poids" class="form-control" id="poidsId" placeholder="Entrer votre poids" name="poids">
             </div>
         </div>
-        <div class="form-group">
-            <div class="row">
-                <div class="offset-sm-4 col-sm-4">
-                    <input type="taille" class="form-control" id="taille" placeholder="Taille" name="taille">
-                </div>
+    </div>
+    <div class="form-group">
+        <div class="row">
+            <div class="offset-sm-4 col-sm-4">
+                <input type="taille" class="form-control" id="tailleId" placeholder="Taille" name="taille">
             </div>
         </div>
-        <div class="form-group">
-            <div class="row">
-                <div class="offset-sm-4 col-sm-4">
-                    <input type="programme" class="form-control" id="programme" placeholder="Générer un programme"
-                           name="programme">
-                </div>
+    </div>
+    <div class="form-group">
+        <div class="row">
+            <div class="offset-sm-4 col-sm-4">
+                <input type="programme" class="form-control" id="programmeId" placeholder="Générer un programme"
+                       name="programme">
             </div>
         </div>
-        <div class="form-group">
-            <div class="offset-sm-6 col-sm-2">
-                <div class="checkbox">
-                    <label><input type="checkbox" name="remember"> Remember me</label>
-                </div>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="offset-sm-4 col-sm-2">
-                <button type="submit" class="btn btn-default">Submit</button>
-            </div>
-        </div>
-    </form>
     </div>
 
+    <div class="group">
+        <div class="row">
+            <div class="offset-sm-5 col-sm-2">
+                <button type="button" class="btn btn-primary btn-lg btn-block">Votre programme</button>
+            </div>
+        </div>
+        <c:if test="${not empty requestScope.error}">
+            <p> ${error}</p>
+        </c:if>
+        <c:if test="${not empty requestScope.error}">
+            <p> ${error2}</p>
+        </c:if>
+    </div>
 </form>
+
+</div>
 </body>
 </html>
