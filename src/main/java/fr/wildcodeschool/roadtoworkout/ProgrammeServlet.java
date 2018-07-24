@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 import com.mysql.jdbc.Driver;
 
-@WebServlet(name = "ProgrammeServlet", urlPatterns = {"/programme"})
+@WebServlet(name = "ProgrammeServlet", urlPatterns = "/programme")
 public class ProgrammeServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 

@@ -1,3 +1,3 @@
 
-<jsp:forward page="/formulaire" />
+<jsp:forward page="/connect" />
 

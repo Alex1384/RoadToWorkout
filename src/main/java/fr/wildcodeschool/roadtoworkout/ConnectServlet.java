@@ -10,10 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
 
 @WebServlet(name = "ConnectServlet", urlPatterns = "/connect")
 public class ConnectServlet extends HttpServlet {
@@ -39,22 +36,27 @@ public class ConnectServlet extends HttpServlet {
                Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/RoadToWorkOut", "root", "jecode4wcs");
 
                PreparedStatement preparedStatement = connection
-                       .prepareStatement("INSERT INTO user VALUES(null, ?, ?, ?, ?, ?, ?, ?, ?);");
+                       .prepareStatement("SELECT * FROM user");
+               ResultSet resultSet = preparedStatement.executeQuery();
+               while (resultSet.next()) {
+                   String emailUser = resultSet.getString("email_user");
+                   String passwordUser = resultSet.getString("password_user");
 
-               preparedStatement.setString(1, emailValue);
-               preparedStatement.setString(2, pass);
-               preparedStatement.setString(3, "F");
-               preparedStatement.setInt(4, 9);
-               preparedStatement.setInt(5, 8);
-               preparedStatement.setInt(6, 45);
-               preparedStatement.setInt(7, 1);
-               preparedStatement.setInt(8, 1);
+                   if (emailValue.equals(emailUser) && pass.equals(passwordUser)) {
+                       HttpSession sessionemail = request.getSession(true);
+                       sessionemail.setAttribute("emailUser", emailValue);
+                       response.sendRedirect("/programme");
+                   }
+                   else {
+                       request.setAttribute("badId", "Adresse email et mot de passe incorrects");
+                       this.getServletContext()
+                               .getRequestDispatcher("/connection.jsp")
+                               .forward(request, response);
+                   }
 
-               preparedStatement.executeUpdate();
+               }
 
-               HttpSession sessionemail = request.getSession(true);
-               sessionemail.setAttribute("emailUser", emailValue);
-               response.sendRedirect("/programme");
+
 
            } catch (IllegalAccessException | InstantiationException | ClassNotFoundException | SQLException e) {
                e.printStackTrace();
@@ -73,7 +75,7 @@ public class ConnectServlet extends HttpServlet {
 
         else {
             sessionemail.getAttribute("emailUser");
-            response.sendRedirect("/home");
+            response.sendRedirect("/connection.jsp");
         }
 
     }

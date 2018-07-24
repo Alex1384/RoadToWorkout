@@ -36,6 +36,24 @@
     <div class="form-group">
         <div class="row">
             <div class="offset-sm-4 col-sm-4">
+                <input type="email" class="form-control" id="emailId" placeholder="Entrer votre email"
+                       name="email">
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="row">
+            <div class="offset-sm-4 col-sm-4">
+                <input type="password" class="form-control" id="passwordId" placeholder="Entrer votre password"
+                       name="password">
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="row">
+            <div class="offset-sm-4 col-sm-4">
                 <input type="firstName" class="form-control" id="firstNameId" placeholder="Entrer votre nom"
                        name="name">
             </div>
@@ -86,7 +104,7 @@
     <div class="group">
         <div class="row">
             <div class="offset-sm-5 col-sm-2">
-                <button type="button" class="btn btn-primary btn-lg btn-block">Votre programme</button>
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Votre programme</button>
             </div>
         </div>
         <c:if test="${not empty requestScope.error}">
