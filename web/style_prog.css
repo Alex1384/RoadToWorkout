@@ -93,13 +93,6 @@
 }
 
 
-
-
-
-
-
-
-
 /*================ BODY ============================ */
 body{
     margin: auto;
@@ -462,7 +455,7 @@ table {
     background: #2f4357;
     margin-top: 20px;
     color: white;
-    height: 200px;
+    height: auto;
 }
 
 /*---------------- text objectif --------------*/
@@ -531,10 +524,33 @@ h1{
 }
 
 /*---------------------------- chevron slide --------------------------------*/
+
 .carousel-control-prev{
-    margin-top: 25%;
+    margin-top: 20%;
 }
 .carousel-control-next{
-    margin-top: 25%;
+    margin-top: 20%;
 }
+
+/*------------------------------- se déconnecter -----------------------------*/
+#btnDisconnect{
+    position: fixed;
+    right: 30px;
+    bottom: 10px;
+    background: -webkit-linear-gradient(to right, #333399 0%, #ff00cc 100%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399 0%, #ff00cc 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#btnDisconnect:hover {
+    color: transparent;
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+    font-weight: bold;
+}
+
 
