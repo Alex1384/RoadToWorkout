@@ -33,10 +33,11 @@
         <c:if test="${not empty requestScope.error}">
             <p class="btn">${error}</p>
         </c:if>
+            <p class="btn">${requestScope.badId}</p>
         <br />
     <br />
     <div class="container">
-        <a href="/home">
+        <a href="/formulaire">
         <input type="submit" class="btn" value="S'inscrire" onclick=""/>
         </a>
     </div>

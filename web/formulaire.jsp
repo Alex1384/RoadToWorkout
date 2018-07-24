@@ -27,15 +27,29 @@
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/formulaire.css">
 </head>
 
-
 <body>
-
-
-
 <form method="post" action="${pageContext.request.contextPath}/formulaire">
     <div class="form-group">
         <div class="row">
-            <div class="offset-sm-4 col-sm-4">
+            <div class="offset-sm-4 col-sm-2">
+                <input type="email" class="form-control" id="emailId" placeholder="Entrer votre email"
+                       name="email">
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="row">
+            <div class="offset-sm-4 col-sm-2">
+                <input type="password" class="form-control" id="passwordId" placeholder="Entrer votre password"
+                       name="password">
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="row">
+            <div class="offset-sm-4 col-sm-2">
                 <input type="firstName" class="form-control" id="firstNameId" placeholder="Entrer votre nom"
                        name="name">
             </div>
@@ -44,7 +58,7 @@
 
     <div class="form-group">
         <div class="row">
-            <div class="offset-sm-4 col-sm-4">
+            <div class="offset-sm-4 col-sm-2">
                 <select class="form-control" id="exampleFormControlSelect1" name="sexe">
                     <option>Choisissez votre sexe</option>
                     <option>Homme</option>
@@ -55,38 +69,29 @@
     </div>
     <div class="form-group">
         <div class="row">
-            <div class="offset-sm-4 col-sm-4">
+            <div class="offset-sm-4 col-sm-2">
                 <input type="Age" class="form-control" id="ageId" placeholder="Entrer votre Age" name="age">
             </div>
         </div>
     </div>
     <div class="form-group">
         <div class="row">
-            <div class="offset-sm-4 col-sm-4">
+            <div class="offset-sm-4 col-sm-2">
                 <input type="poids" class="form-control" id="poidsId" placeholder="Entrer votre poids" name="poids">
             </div>
         </div>
     </div>
     <div class="form-group">
         <div class="row">
-            <div class="offset-sm-4 col-sm-4">
+            <div class="offset-sm-4 col-sm-2">
                 <input type="taille" class="form-control" id="tailleId" placeholder="Taille" name="taille">
             </div>
         </div>
     </div>
-    <div class="form-group">
-        <div class="row">
-            <div class="offset-sm-4 col-sm-4">
-                <input type="programme" class="form-control" id="programmeId" placeholder="Générer un programme"
-                       name="programme">
-            </div>
-        </div>
-    </div>
-
     <div class="group">
         <div class="row">
             <div class="offset-sm-5 col-sm-2">
-                <button type="button" class="btn btn-primary btn-lg btn-block">Votre programme</button>
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Votre programme</button>
             </div>
         </div>
         <c:if test="${not empty requestScope.error}">

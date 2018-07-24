@@ -35,7 +35,6 @@
 <body>
 <div id="back"></div>
 
-
 <div class="btn-group">
     <button type="button" class="btn btn-danger" style="width: auto;height: 50px" >${requestScope.name}</button>
     <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 30px;height: 50px">
@@ -61,9 +60,6 @@
         </table>
     </div>
 </div>
-
-
-
 
 <div class="container">
     <div class="banner">
@@ -715,6 +711,8 @@
         </div>
     </div>
 </div>
+
+<a id="btnDisconnect" href="/disconnect">Se déconnecter</a>
 
 <!--show blocMonday -->
 <script>
