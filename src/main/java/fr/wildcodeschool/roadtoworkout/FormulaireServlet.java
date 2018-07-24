@@ -64,7 +64,7 @@ public class FormulaireServlet extends HttpServlet {
 
             preparedStatement.executeUpdate();
 
-        response.sendRedirect("/home");
+        response.sendRedirect("/programme");
 
         } catch (ClassNotFoundException e) {
             e.printStackTrace();

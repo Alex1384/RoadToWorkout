@@ -36,7 +36,7 @@ public class ConnectServlet extends HttpServlet {
                driverClass = Class.forName("com.mysql.jdbc.Driver");
                Driver driver = (Driver) driverClass.newInstance();
                DriverManager.registerDriver(driver);
-               Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/roadw", "root", "jecode4wcs");
+               Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/RoadToWorkOut", "root", "jecode4wcs");
 
                PreparedStatement preparedStatement = connection
                        .prepareStatement("INSERT INTO user VALUES(null, ?, ?, ?, ?, ?, ?, ?, ?);");
@@ -54,7 +54,7 @@ public class ConnectServlet extends HttpServlet {
 
                HttpSession sessionemail = request.getSession(true);
                sessionemail.setAttribute("emailUser", emailValue);
-               response.sendRedirect("/home");
+               response.sendRedirect("/programme");
 
            } catch (IllegalAccessException | InstantiationException | ClassNotFoundException | SQLException e) {
                e.printStackTrace();
