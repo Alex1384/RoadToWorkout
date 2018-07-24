@@ -716,6 +716,8 @@
     </div>
 </div>
 
+<a href="/disconnect">Se déconnecter</a>
+
 <!--show blocMonday -->
 <script>
     function showBloc1() {

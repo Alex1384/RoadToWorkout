@@ -5,6 +5,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.*;
@@ -20,6 +21,8 @@ public class ProgrammeServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        HttpSession sessionemail = request.getSession(true);
+        String emailReceived = sessionemail.getAttribute("emailUser").toString();
 
         Class driverClassProfil = null;
         try {
@@ -30,13 +33,9 @@ public class ProgrammeServlet extends HttpServlet {
 
             Connection connectionProfil = DriverManager.getConnection("jdbc:mysql://localhost:3306/RoadToWorkOut", "root", "jecode4wcs");
             PreparedStatement preparedStatementProfil = connectionProfil
-                    .prepareStatement("SELECT * FROM user where id_user  = ?");
-            preparedStatementProfil.setInt(1, 1 );
+                    .prepareStatement("SELECT * FROM user where email_user = ?");
+            preparedStatementProfil.setString(1, emailReceived);
 
-
-            PreparedStatement preparedStatementweigth = connectionProfil
-                    .prepareStatement("SELECT * FROM weigth where  = ?");
-            preparedStatementProfil.setInt(1, 1 );
             ResultSet resultSetProfil = preparedStatementProfil.executeQuery();
             while (resultSetProfil.next()) {
 

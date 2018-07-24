@@ -49,7 +49,7 @@ public class FormulaireServlet extends HttpServlet {
                 PreparedStatement preparedStatement = connection
                         .prepareStatement("INSERT INTO user VALUES(null, ?, ?, ?, ?, ?, ?, ?, ?, ?);");
 
-                preparedStatement.setString(1,email );
+                preparedStatement.setString(1,email);
                 preparedStatement.setString(2,password);
                 preparedStatement.setString(3,sexe );
                 preparedStatement.setInt(4,weight );
@@ -61,7 +61,7 @@ public class FormulaireServlet extends HttpServlet {
 
                 preparedStatement.executeUpdate();
 
-                response.sendRedirect("/programme");
+            this.getServletContext().getRequestDispatcher("/programme.jsp").forward(request, response);
 
             } catch (ClassNotFoundException e) {
                 e.printStackTrace();
