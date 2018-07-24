@@ -1,9 +1,8 @@
+
 $(document).ready(function() {
     var panels = $('.user-infos');
     var panelsButton = $('.dropdown-user');
     panels.hide();
-
-
 
     //Click dropdown
     panelsButton.click(function() {
@@ -17,16 +16,14 @@ $(document).ready(function() {
             //Completed slidetoggle
             if(idFor.is(':visible'))
             {
-                currentButton.html('<i class="glyphicon glyphicon-chevron-up text-muted"></i>');
+                currentButton.html('<i class="icon-chevron-up text-muted"></i>');
             }
             else
             {
-                currentButton.html('<i class="glyphicon glyphicon-chevron-down text-muted"></i>');
+                currentButton.html('<i class="icon-chevron-down text-muted"></i>');
             }
         })
     });
-
-
 
 
     $('[data-toggle="tooltip"]').tooltip();

@@ -14,7 +14,7 @@
     <title>Programme</title>
     <script type="text/javascript" src="${pageContext.request.contextPath}/programme.js"></script>
     <link rel="stylesheet" type="text/css" href="style_prog.css">
-    <script type="text/javascript" src="profil.js"></script>
+
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,10 +36,35 @@
 <div id="back"></div>
 
 
-    <div class="container">
-        <jsp:include page="/profil.jsp"></jsp:include>
+<div class="btn-group">
+    <button type="button" class="btn btn-danger" style="width: auto;height: 50px" >${requestScope.name}</button>
+    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 30px;height: 50px">
+        <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <div class="dropdown-menu" >
+        <table class="table table-condensed table-responsive table-user-information">
+            <tbody>
+            <tr>
+                <td class="profil">Poids</td>
+                <td class="profil">${requestScope.weight} kg</td>
+            </tr>
+            <tr>
+                <td class="profil">Taille</td>
+                <td class="profil">${requestScope.size} cm</td>
+            </tr>
+            <tr>
+                <td class="profil">Genre</td>
+                <td class="profil">${requestScope.sexe}</td>
+            </tr>
 
+            </tbody>
+        </table>
     </div>
+</div>
+
+
+
+
 <div class="container">
     <div class="banner">
         <a class="banner_btn"><p>Mon objectif : ${sessionScope.nameObjectif}</p></a>

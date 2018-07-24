@@ -39,9 +39,16 @@ public class ProgrammeServlet extends HttpServlet {
             preparedStatementProfil.setInt(1, 1 );
             ResultSet resultSetProfil = preparedStatementProfil.executeQuery();
             while (resultSetProfil.next()) {
-                //TODO : charger le UserModel
+
                 String userName = resultSetProfil.getString("user_name");
+                String userSexe = resultSetProfil.getString("sexe_user");
+                int userweight = resultSetProfil.getInt("weight_user");
+                int usersize = resultSetProfil.getInt("size_user");
                 request.setAttribute("name", userName);
+                request.setAttribute("sexe", userSexe);
+                request.setAttribute("weight", userweight);
+                request.setAttribute("size", usersize);
+
             }
 
             ResultSet resultSetWeigth = preparedStatementProfil.executeQuery();
