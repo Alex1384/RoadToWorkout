@@ -6,16 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78e64c41-368a-45e6-8015-3007b90288a8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/wildcodeschool/roadtoworkout/FormulaireServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/RoadToWorkout_Web_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/RoadToWorkout_Web_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/wildcodeschool/roadtoworkout/HomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/wildcodeschool/roadtoworkout/HomeServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/formulaire.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/formulaire.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/formulaire.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/formulaire.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="78e64c41-368a-45e6-8015-3007b90288a8" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -65,16 +56,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="formulaire.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="formulaire.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/formulaire.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="420">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="formulaire.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="formulaire.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/formulaire.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="394">
@@ -120,8 +111,8 @@
         <option value="$PROJECT_DIR$/src/main/java/fr/wildcodeschool/roadtoworkout/HomeServlet.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/fr/wildcodeschool/roadtoworkout/FormulaireServlet.java" />
-        <option value="$PROJECT_DIR$/web/formulaire.css" />
         <option value="$PROJECT_DIR$/web/formulaire.jsp" />
+        <option value="$PROJECT_DIR$/web/formulaire.css" />
       </list>
     </option>
   </component>
@@ -405,12 +396,12 @@
       <workItem from="1532277583714" duration="725000" />
       <workItem from="1532328822086" duration="26000" />
       <workItem from="1532336458679" duration="3077000" />
-      <workItem from="1532417202187" duration="4630000" />
+      <workItem from="1532417202187" duration="5969000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48065000" />
+    <option name="totallyTimeSpent" value="49404000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="75" y="24" width="1375" height="876" extended-state="0" />
@@ -434,10 +425,10 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28053692" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28053692" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32885906" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.498" visible="true" weight="0.31075996" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.498" visible="true" weight="0.31075996" />
       <window_info id="Web" order="2" sideWeight="0.502" side_tool="true" weight="0.28743416" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -779,17 +770,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/formulaire.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/formulaire.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="394">
           <caret line="91" column="52" lean-forward="true" selection-start-line="91" selection-start-column="52" selection-end-line="91" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/formulaire.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
