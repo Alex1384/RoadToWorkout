@@ -1,4 +1,3 @@
 
-<jsp:forward page ="/formulaire.jsp"/>
-
+<jsp:forward page="/formulaire" />
 
