@@ -6,7 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78e64c41-368a-45e6-8015-3007b90288a8" name="Default" comment="" />
+    <list default="true" id="78e64c41-368a-45e6-8015-3007b90288a8" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,7 +28,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FormulaireServlet.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FormulaireServlet.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/fr/wildcodeschool/roadtoworkout/FormulaireServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="386">
@@ -56,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="formulaire.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="formulaire.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/formulaire.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="375">
+              <caret line="25" column="7" lean-forward="true" selection-start-line="24" selection-end-line="25" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -396,16 +398,15 @@
       <workItem from="1532277583714" duration="725000" />
       <workItem from="1532328822086" duration="26000" />
       <workItem from="1532336458679" duration="3077000" />
-      <workItem from="1532417202187" duration="5969000" />
+      <workItem from="1532417202187" duration="6406000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49404000" />
+    <option name="totallyTimeSpent" value="49841000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="75" y="24" width="1375" height="876" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -427,7 +428,7 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.28053692" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32885906" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32885906" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.498" visible="true" weight="0.31075996" />
       <window_info id="Web" order="2" sideWeight="0.502" side_tool="true" weight="0.28743416" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -739,27 +740,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/wildcodeschool/roadtoworkout/HomeServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/home.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/wildcodeschool/roadtoworkout/FormulaireServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="60" column="45" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -779,8 +763,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/formulaire.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="375">
+          <caret line="25" column="7" lean-forward="true" selection-start-line="24" selection-end-line="25" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/wildcodeschool/roadtoworkout/HomeServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/wildcodeschool/roadtoworkout/FormulaireServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="60" column="45" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
